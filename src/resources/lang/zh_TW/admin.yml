@@ -1,0 +1,138 @@
+---
+index:
+  total-users: 已註冊用戶
+  total-players: 角色
+  total-textures: 已上載的材質
+  disk-usage: 磁碟利用情況
+  overview: 概覽
+  texture-uploads: 材質上載
+  user-registration: 使用者註冊
+notifications:
+  send:
+    title: 發送通知
+    success: 發送成功
+  receiver:
+    title: 接收人
+    all: 所有用戶
+    normal: 常規用戶
+    uid: 指定用戶 ID
+    email: 指定電子郵件地址
+  title: 標題
+  content: 內容（支援 Markdown 語法）
+users:
+  operations:
+    non-existent: 沒有這個用戶。
+    no-permission: 您沒有權限操作此用戶。
+    email:
+      success: 電子郵件地址變更成功。
+    verification:
+      success: 用戶電子郵件驗證狀態修改成功。
+    nickname:
+      success: 暱稱已成功修改。
+    password:
+      success: 密碼已成功修改。
+    score:
+      success: 積分已成功修改。
+    permission: 權限已更新。
+    delete:
+      success: 這個賬戶已成功刪除。
+players:
+  no-permission: 您沒有權限操作此玩家。
+  textures:
+    non-existent: 材質 tid :tid 不存在
+    success: 玩家 :player 的材質已更新。
+  name:
+    success: 玩家名稱已更新為 :player。
+  owner:
+    success: 玩家 :player 的所有權已讓渡至用戶 :user。
+  delete:
+    success: 角色已成功刪除。
+customize:
+  change-color:
+    title: 更換主題色
+  colors:
+    navbar: 頂部導覽欄
+    sidebar:
+      dark: 側邊欄（暗）
+      light: 側邊欄（亮）
+i18n:
+  add: 添加新語言文本
+  added: 語言文本已添加
+  updated: 語言文本已更新
+  deleted: 語言文本已刪除
+  group: 分組
+  key: 鍵
+  text: 文本
+  tip: 如何使用這個頁面？
+status:
+  info: 資訊
+  health: 運行狀態
+  bs:
+    name: Blessing Skin
+    version: 版本號
+    env: 應用運行環境
+    debug: 是否處於除錯狀態？
+    commit: 提交
+    laravel: Laravel 版本號
+  server:
+    name: 伺服器
+    php: PHP 版本
+    web: 網站伺服器軟體
+    os: 作業系統
+  db:
+    name: 資料庫
+    type: 伺服器
+    host: 主機
+    port: 連接埠
+    username: 用戶名
+    database: 資料庫
+    prefix: 資料庫表前綴
+  plugins: 已啟用插件（：amount）
+plugins:
+  readme: 自述
+  operations:
+    title: 操作
+    enabled: ':plugin 已被啓用'
+    unsatisfied:
+      notice: 插件中存在不成立的依賴關係，因此我們無法啟用它。請安裝或更新下述的所有插件，並禁用那些不可用的依賴關係。
+      disabled: '":name" 插件未啟用。'
+      version: '「:title」的版本不符合要求 ":constraint"'
+      conflict: '「:title」插件与此插件不能同时运行。'
+    disabled: ':plugin 已被禁用。'
+    deleted: 成功刪除插件。
+    no-config-notice: 插件未安裝或未提供配置頁。
+    no-readme-notice: 這個插件沒有說明文檔。
+    not-found: 沒有這樣的插件。
+  market:
+    unresolved: 插件中存在不成立的依賴關係，因此我們無法啟用它。請安裝或更新下述的所有插件，並禁用那些不可用的依賴關係。
+    connection-error: 无法鏈接到插件市场源，错误訊息：:error
+    non-existent: 插件 :plugin 不存在。
+    install-success: 插件已安裝。
+update:
+  complete: 更新完成。
+  info:
+    title: 更新訊息
+    up-to-date: 已經為最新版本。
+    available: 已有新的更新版本。
+    versions:
+      latest: "最新版本："
+      current: "當前版本："
+    check-github: 去查看 GitHub Releases
+    button: 立即更新
+  cautions:
+    title: 警告
+    link: 点击來了解更多訊息。
+    text: |
+      请根据你的伺服器所在位置（国内/国外）选择更新源。
+      如錯誤选至相对于你的伺服器速度较慢的源，可能会造成检查与下载更新页面长时间无响应。
+      如何更换更新源？
+  errors:
+    connection: "無法訪問當前更新源。 細節：:error"
+    spec: 不支援当前更新源。
+    php: PHP 版本过低，至少需要 :version。
+download:
+  errors:
+    download: '下載失敗。原因：:error'
+    shasum: 文件驗證失敗。 請重新下載。
+    unzip: 解壓檔案失敗。
+invalid-action: 非法的操作

@@ -1,0 +1,22 @@
+{
+    "name": "blessing/texture-renderer",
+    "description": "Minecraft texture renderer.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pig Fang",
+            "email": "g-plane@hotmail.com"
+        }
+    ],
+    "require": {
+        "ext-gd": "*",
+        "intervention/image": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blessing\\": "src/Blessing"
+        }
+    },
+    "minimum-stability": "stable"
+}

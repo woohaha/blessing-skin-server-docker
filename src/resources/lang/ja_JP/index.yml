@@ -1,0 +1,17 @@
+---
+features:
+  title: 機能
+  first:
+    icon: fa-users
+    name: マルチプレイヤー
+    desc: 1つのアカウントに複数のプレイヤーを追加できます。
+  second:
+    icon: fa-share-alt
+    name: シェア
+    desc: スキンライブラリを探索し、「いいね」を送り、友達と共有しましょう。
+  third:
+    icon: fa-cloud
+    name: 無料！
+    desc: それは永久に無料です。広告なし、サブスクリプション料金はありません。
+introduction: ':sitename はマインクラフトスキンのアップロードとホスティングサービスを提供します。スキンの Mod などと連携しています。 (e.g. CustomSkinLoader)、ゲームキャラクターのスキンとマントを選択し、Minecraft で他のプレイヤーに表示させることができます。'
+start: 参加する

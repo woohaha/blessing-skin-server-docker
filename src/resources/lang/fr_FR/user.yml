@@ -1,0 +1,101 @@
+---
+sign-success: Signed successfully. You got :score scores.
+announcement: Annonce
+no-unread: Aucune nouvelle notification.
+verification:
+  disabled: La vérification de l'adresse e-mail n'est pas disponible.
+  frequent-mail: Vous avez cliqué trop rapidement sur le bouton d'envoi. Patientez quelques minutes.
+  verified: Votre compte est déjà vérifié.
+  success: Le lien de vérification a été envoyé. Veuillez vérifier votre boîte de réception.
+  failed: 'Nous n''avons pas pu vous envoyer le lien de vérification. Info: :msg'
+  mail:
+    title: Vérifiez votre compte sur :sitename
+    message: Vous recevez cet e-mail parce que quelqu'un a créer un compte avec cette adresse e-mail sur :sitename.
+    reset: 'Cliquez ici pour vérifier votre compte : <a href=":url">:url</a>'
+    ignore: Si vous n'avez pas créé de compte, vous pouvez ignorer ce message.
+score-intro:
+  title: Qu'est-ce que le score ?
+  introduction: |
+    We use score system to prevent the behaviors like uplaoding huge amount of textures and registering players casually.
+    Either adding players, uplaoding textures or adding a skinlib item to your closet will consume scores.
+    :return-score
+
+    New users will get :initial_score scores initially, and you can acquire :score-from ~ :score-to scores by daily signing in.
+  will-return-score: Le score sera remboursée si vous avez supprimé des joueurs, des textures ou des éléments de placard.
+  no-return-score: Le score ne sera PAS remboursée si vous avez supprimé des joueurs, des textures ou des éléments de placard.
+  rates:
+    storage: ':score scores = 1 KB storage'
+    player: ':score scores = 1 player'
+    closet: ':score socres = 1 closet item'
+closet:
+  add:
+    success: ':name a été ajouté avec succès.'
+    repeated: Vous avez déjà ajouté cette texture.
+    not-found: Nous n'avons pas pu trouver cette texture.
+    lack-score: Vous n'avez pas assez de score pour l'ajouter dans votre placard.
+  rename:
+    success: L'élément a été renommé avec succès en :name
+  remove:
+    success: La texture a été retirée de l'armoire avec succès.
+    non-existent: La texture n'existe pas dans votre placard.
+player:
+  login-notice: Vous pouvez maintenant vous connecter avec les noms de joueurs que vous possédez à la place de votre adresse e-mail.
+  player-name-rule:
+    official: Le nom du joueur ne peut contenir que des lettres, des chiffres et des tirets bas.
+    cjk: Le nom du joueur peut contenir des lettres, des chiffres, des tirets bas et des idéographes unifiés CJK.
+    utf8: Le nom du joueur doit être une chaîne UTF-8.
+    custom: Custom player name rules are applied on this site. Please contact admins for further information.
+  player-name-length: Le nom du joueur doit contenir au moins :min caractères et ne doit pas dépasser :max caractères.
+  add:
+    repeated: Ce nom d'utilisateur est déjà enregistré.
+    lack-score: You don't have enough score to add a player.
+    success: Le joueur :name a été ajouté avec succès.
+  delete:
+    success: Le joueur :name a été supprimé avec succès.
+  rename:
+    repeated: Ce pseudonyme est déjà utilisé. Veuillez en choisir un autre.
+    success: Le joueur :old a été renommé en :new
+  set:
+    success: La texture a été appliquée au joueur :name avec succès.
+  clear:
+    success: Les textures du joueur :name ont été réinitialisées avec succès.
+profile:
+  avatar:
+    title: Changer d'avatar ?
+    notice: Click the gear icon "<i class="fa fa-cog"></i>" of any skin in your closet, then click "Set as avatar". We will cut the head segment of that skin for you. If there is no icon like this, please try to disable your ADs blocking extension.
+    wrong-type: Vous ne pouvez pas utiliser une cape en tant qu'avatar.
+    success: Le nouvel avatar a été défini avec succès.
+    reset: Réinitialiser l'avatar
+  password:
+    title: Changer le mot de passe
+    old: Ancien mot de passe
+    new: Nouveau mot de passe
+    confirm: Répétez le mot de passe
+    button: Changer le mot de passe
+    wrong-password: Mot de passe d'origine incorrect.
+    success: Mot de passe mis à jour avec succès, veuillez vous reconnecter.
+  nickname:
+    title: Changer le pseudonyme
+    empty: Aucun pseudo n'a été défini.
+    success: Pseudo mis à jour avec succès à :nickname
+  email:
+    title: Changer l'adresse e-mail
+    new: Nouvelle adresse e-mail
+    password: Mot de passe actuel
+    button: Changer l'adresse e-mail
+    wrong-password: Mot de passe incorrect.
+    existed: Cette adresse e-mail est déjà enregistrée.
+    success: Adresse e-mail mise à jour avec succès, veuillez vous reconnecter.
+  delete:
+    title: Supprimer le compte
+    notice: Voulez-vous vraiment supprimer votre compte sur :site ?
+    admin: Le compte d'un administrateur ne peut pas être supprimé.
+    button: Supprimer mon compte
+    modal-title: Vous devez entrer votre mot de passe pour continuer
+    modal-notice: |
+      Vous êtes sur le point de supprimer votre compte.
+      Ceci est permanent ! Aucune restauration sera possible.
+      Vous êtes prévenu!
+    password: Mot de passe actuel
+    wrong-password: Mot de passe incorrect.
+    success: Votre compte a été supprimé avec succès.

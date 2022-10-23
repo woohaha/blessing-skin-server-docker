@@ -1,0 +1,59 @@
+---
+index: Page d'accueil
+skinlib: Bibliothèque de skins
+user-center: Centre utilisateur
+logout: Se déconnecter
+login: Se connecter
+register: S'inscrire maintenant
+profile: Profil utilisateur
+admin-panel: Panneau d'administration
+explore: Explorer
+manage: Gérer
+anonymous: Invité
+back: Retour
+dashboard: Tableau de bord
+my-closet: Garde-robe
+my-reports: Rapports
+developer: Avancé
+oauth-manage: Applications OAuth2
+player-manage: Joueurs
+user-manage: Utilisateurs
+report-manage: Rapports
+plugin-manage: Plugins
+plugin-market: Marché des plugins
+plugin-configs: Configuration des plugins
+customize: Personnaliser
+i18n: Internationalisation
+options: Options
+score-options: Options de score
+res-options: Options de ressources
+status: Statut
+check-update: Recherche de mises à jour
+download-update: Télécharger les mises à jour
+close: Fermer
+skin: Skin
+cape: Cape
+submit: Soumettre
+cancel: Annuler
+yes: true
+no: false
+op-success: Opération terminée.
+unknown: Inconnu
+notice: Notice
+illegal-parameters: Paramètres illégaux.
+private: Privé
+public: Public
+unexistent-user: Cet utilisateur n'existe pas.
+player-banned: Le propriétaire de ce joueur a été banni.
+texture-deleted: La texture demandée a été supprimée.
+user:
+  email: Adresse e-mail
+  nickname: Pseudonyme
+  password: Mot de passe
+  score: Score
+  register-at: Inscrit à
+player:
+  owner: Propriétaire
+  player-name: Nom du joueur
+  previews: Aperçu de la texture
+  last-modified: Dernière modification

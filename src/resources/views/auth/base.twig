@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+  <head>
+    {{ include('shared.head') }}
+    <title>{% block title %}{% endblock %} - {{ site_name }}</title>
+  </head>
+
+  <body class="hold-transition login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        <a href="{{ url('/') }}">{{ site_name }}</a>
+      </div>
+
+      <div class="card">
+        <div class="card-body login-card-body">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+
+    {% block before_foot %}{% endblock %}
+    {{ include('shared.foot') }}
+  </body>
+</html>

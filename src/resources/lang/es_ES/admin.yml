@@ -1,0 +1,138 @@
+---
+index:
+  total-users: Usuarios Registrados
+  total-players: Jugadores
+  total-textures: Texturas Subidas
+  disk-usage: Uso del Disco
+  overview: Resumen
+  texture-uploads: Subidas de Texturas
+  user-registration: Registro de Usuario
+notifications:
+  send:
+    title: Enviar Notificación
+    success: '¡Enviado con éxito!'
+  receiver:
+    title: Receptor
+    all: Todos los Usuarios
+    normal: Usuarios Normales
+    uid: UID especificado
+    email: Email especificado
+  title: Título
+  content: Contenido (Markdown está soportado).
+users:
+  operations:
+    non-existent: No existe ese usuario.
+    no-permission: No tienes permiso para operar este usuario.
+    email:
+      success: Email cambiado con éxito.
+    verification:
+      success: Estado de verificación de la cuenta cambiado con éxito.
+    nickname:
+      success: El apodo se ha modificado con éxito.
+    password:
+      success: Contraseña cambiada con éxito.
+    score:
+      success: Puntuación cambiada con éxito.
+    permission: Permiso actualizado.
+    delete:
+      success: La cuenta ha sido eliminada con éxito.
+players:
+  no-permission: No tienes permiso para operar este jugador.
+  textures:
+    non-existent: Textura Inexistente tid.:tid
+    success: Las texturas de :player han sido actualizadas.
+  name:
+    success: El nombre del jugador ha sido actualizado a :player
+  owner:
+    success: El jugador :player fue transferido al usuario :user.
+  delete:
+    success: El jugador ha sido eliminado correctamente.
+customize:
+  change-color:
+    title: Cambiar color del tema
+  colors:
+    navbar: Barra Superior de Navegación
+    sidebar:
+      dark: Barra Lateral (oscuro)
+      light: Barra Lateral (claro)
+i18n:
+  add: Añadir nueva línea de idioma
+  added: Línea de idioma añadida.
+  updated: Línea de idioma actualizada.
+  deleted: Línea de idioma eliminada.
+  group: Grupo
+  key: Clave
+  text: Texto
+  tip: '¿Cómo puedo usar esta página?'
+status:
+  info: Información
+  health: Salud
+  bs:
+    name: Blessing Skin
+    version: Versión
+    env: Entorno de aplicación
+    debug: '¿Depurar o no?'
+    commit: Commit
+    laravel: Versión de Laravel
+  server:
+    name: Servidor
+    php: Versión de PHP
+    web: Software del servidor web
+    os: SO
+  db:
+    name: Base de datos
+    type: Servidor
+    host: Host
+    port: Puerto
+    username: Usuario
+    database: Base de datos
+    prefix: Prefijo de tabla
+  plugins: Plugins habilitados (:amount)
+plugins:
+  readme: Leéme
+  operations:
+    title: Operaciones
+    enabled: ':plugin ha sido habilitado.'
+    unsatisfied:
+      notice: Hay conflictos o dependencias insatisfechas en el plugin, por lo tanto no podemos activarlo. Por favor, instale o actualice los plugins listados a continuación, y desactive los que tienen conflictos.
+      disabled: 'El plugin ":name" no está habilitado.'
+      version: 'La versión de ":title" no satisface la restricción ":constraint".'
+      conflict: 'El plugin ":title" no puede ejecutarse con este plugin al mismo tiempo.'
+    disabled: ':plugin ha sido deshabilitado.'
+    deleted: El plugin se eliminó con éxito.
+    no-config-notice: El plugin no está instalado o no proporciona una página de configuración.
+    no-readme-notice: El plugin no dispone de un archivo de lectura.
+    not-found: No existe dicho plugin.
+  market:
+    unresolved: Hay conflictos o dependencias insatisfechas en el plugin, por lo tanto no podemos descargar. Por favor, instale o actualice los plugins listados a continuación, y desactive los que tienen conflictos.
+    connection-error: No se puede conectar al registro de plugins. :error
+    non-existent: El plugin :plugin no existe.
+    install-success: Se instaló el plugin.
+update:
+  complete: Actualización completada
+  info:
+    title: Actualizar información
+    up-to-date: Ya está actualizado.
+    available: Nueva versión disponible.
+    versions:
+      latest: "Última versión:"
+      current: "Versión actual:"
+    check-github: Comprobar versiones de GitHub
+    button: Actualizar ahora
+  cautions:
+    title: Precauciones
+    link: compruebe esto.
+    text: |
+      Por favor, elija la fuente de actualización según el entorno de red de su host.
+      La conexión de baja velocidad entre la fuente de actualización y su host causará una carga lenta a la hora de comprobar y descargar la página.
+      Para cambiar la fuente de actualización por defecto,
+  errors:
+    connection: "No se puede acceder a la fuente de actualización actual. Detalles: :error"
+    spec: La fuente de actualización actual no está soportada.
+    php: Tu versión de PHP es demasiado baja para actualizar. Requiere :version o posterior.
+download:
+  errors:
+    download: 'Error al descargar. Error: :error'
+    shasum: La validación del archivo ha fallado. Por favor, descargue de nuevo.
+    unzip: Error al desempaquetar archivos.
+invalid-action: Acción inválida

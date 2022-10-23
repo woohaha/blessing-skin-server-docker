@@ -1,0 +1,153 @@
+{% extends 'setup.base' %}
+
+{% block subtitle %}{{ trans('setup.wizard.database.title') }}{% endblock %}
+
+{% block content %}
+  <p>{{ trans('setup.wizard.database.text') }}</p>
+  <form
+    id="setup"
+    method="post"
+    action="{{ url('setup/database') }}"
+    novalidate="novalidate"
+  >
+    {{ csrf_field() }}
+    <table>
+      <tr>
+        <th>
+          <label for="type" class="form-label">{{ trans('setup.wizard.database.type') }}</label>
+        </th>
+        <td class="form-group">
+          <label class="form-radio d-inline-block">
+            <input name="type" type="radio" value="mysql" id="type-mysql" checked>
+            <i class="form-icon"></i> MySQL / MariaDB
+          </label>
+          <label class="form-radio d-inline-block">
+            <input name="type" type="radio" value="pgsql" id="type-pgsql">
+            <i class="form-icon"></i> PostgreSQL
+          </label>
+          <label class="form-radio d-inline-block">
+            <input name="type" type="radio" value="sqlite" id="type-sqlite">
+            <i class="form-icon"></i> SQLite
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label class="form-label" for="host">{{ trans('setup.wizard.database.host') }}</label>
+        </th>
+        <td>
+          <input
+            class="form-input"
+            name="host"
+            type="text"
+            id="host"
+            size="25"
+            value="{{ host }}"
+          >
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label class="form-label" for="port">{{ trans('setup.wizard.database.port') }}</label>
+        </th>
+        <td>
+          <input
+            class="form-input"
+            name="port"
+            type="text"
+            id="port"
+            size="25"
+            value="{{ port }}"
+          >
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label class="form-label" for="username">{{ trans('setup.wizard.database.username') }}</label>
+        </th>
+        <td>
+          <input
+            class="form-input"
+            name="username"
+            type="text"
+            id="username"
+            size="25"
+            value="{{ username }}"
+          >
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label class="form-label" for="password">{{ trans('setup.wizard.database.password') }}</label>
+        </th>
+        <td>
+          <input
+            class="form-input"
+            type="password"
+            name="password"
+            id="password"
+            value="{{ password }}"
+          >
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label class="form-label" for="db">{{ trans('setup.wizard.database.db') }}</label>
+        </th>
+        <td>
+          <input
+            class="form-input"
+            name="db"
+            type="text"
+            id="db"
+            size="25"
+            value="{{ database }}"
+          >
+        </td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><p><small>{{ trans('setup.wizard.database.db-notice') }}</small></p></td>
+      </tr>
+      <tr>
+        <th>
+          <label class="form-label" for="prefix">{{ trans('setup.wizard.database.prefix') }}</label>
+        </th>
+        <td>
+          <input
+            class="form-input"
+            name="prefix"
+            type="text"
+            id="prefix"
+            size="25"
+            value="{{ prefix }}"
+          >
+        </td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><p><small>{{ trans('setup.wizard.database.prefix-notice') }}</small></p></td>
+      </tr>
+    </table>
+
+    {% if errors.any %}
+      <div class="toast toast-error" role="alert">
+        <ul>
+          {% for error in errors.all %}
+            <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    <p class="step">
+      <input
+        type="submit"
+        name="submit"
+        id="submit"
+        class="btn btn-primary"
+        value="{{ trans('setup.wizard.welcome.button') }}"
+      >
+    </p>
+</form>
+{% endblock %}

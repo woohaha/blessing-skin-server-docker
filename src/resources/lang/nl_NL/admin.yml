@@ -1,0 +1,138 @@
+---
+index:
+  total-users: Regregistreerde Gebruikers
+  total-players: Spelers
+  total-textures: Geüploade Textures
+  disk-usage: Schijfgebruik
+  overview: Overzicht
+  texture-uploads: Texture Uploads
+  user-registration: Gebruikers Registratie
+notifications:
+  send:
+    title: Verstuur Notificatie
+    success: Succesvol verzonden!
+  receiver:
+    title: Ontvanger
+    all: Alle Gebruikers
+    normal: Normale Gebruikers
+    uid: Opgegeven UID
+    email: Opgegeven Email
+  title: Titel
+  content: Inhoud (Markdown wordt ondersteund.)
+users:
+  operations:
+    non-existent: Deze gebruiker bestaat niet.
+    no-permission: Je hebt geen permissie om deze speler te bewerken.
+    email:
+      success: E-mail succesvol gewijzigd.
+    verification:
+      success: Account verificatiestatus succesvol ingevuld.
+    nickname:
+      success: Naam succesvol aangepast.
+    password:
+      success: Wachtwoord succesvol gewijzigd.
+    score:
+      success: Score succesvol aangepast.
+    permission: Toestemming bijgewerkt.
+    delete:
+      success: Het account is succesvol verwijderd.
+players:
+  no-permission: Je hebt niet langer meer permissie om deze speler te beheersen.
+  textures:
+    non-existent: Geen van deze tekstuur tid.:tid
+    success: De tekstuur van :speler is bijgewerkt.
+  name:
+    success: Spelernaam is veranderd naar :player
+  owner:
+    success: De speler :player was getransporteerd naar speler :user.
+  delete:
+    success: The player has been deleted successfully.
+customize:
+  change-color:
+    title: Change Theme Color
+  colors:
+    navbar: Top Navigation Bar
+    sidebar:
+      dark: Sidebar (Dark)
+      light: Sidebar (Light)
+i18n:
+  add: Add New Language Line
+  added: Language line added.
+  updated: Language line updated.
+  deleted: Language line deleted.
+  group: Group
+  key: Key
+  text: Text
+  tip: How can I use this page?
+status:
+  info: Information
+  health: Health
+  bs:
+    name: Blessing Skin
+    version: Version
+    env: Application Environment
+    debug: Debugging or Not?
+    commit: Commit
+    laravel: Laravel Version
+  server:
+    name: Server
+    php: PHP Version
+    web: Web Server Software
+    os: OS
+  db:
+    name: Database
+    type: Server
+    host: Host
+    port: Port
+    username: Username
+    database: Database
+    prefix: Table Prefix
+  plugins: Enabled Plugins (:amount)
+plugins:
+  readme: Read Me
+  operations:
+    title: Operations
+    enabled: ':plugin has been enabled.'
+    unsatisfied:
+      notice: There are conflicts or unsatisfied dependencies in the plugin, therefore we can't enable it. Please install or update the plugins listed below, and disable those have conflicts.
+      disabled: 'The ":name" plugin is not enabled.'
+      version: 'The version of ":title" does not satisfies the constraint ":constraint".'
+      conflict: 'The ":title" plugin cannot run with this plugin at the same time.'
+    disabled: ':plugin has been disabled.'
+    deleted: The plugin was deleted successfully.
+    no-config-notice: The plugin is not installed or doesn't provide a configuration page.
+    no-readme-notice: The plugin doesn't contain a readme file.
+    not-found: No such plugin.
+  market:
+    unresolved: There are conflicts or unsatisfied dependencies in the plugin, therefore we can't download it. Please install or update the plugins listed below, and disable those have conflicts.
+    connection-error: Unable to connect to the plugins registry. :error
+    non-existent: The plugin :plugin does not exist.
+    install-success: Plugin was installed.
+update:
+  complete: Update completed
+  info:
+    title: Update Information
+    up-to-date: Already up-to-date.
+    available: New version available.
+    versions:
+      latest: "Latest Version:"
+      current: "Current Version:"
+    check-github: Check GitHub Releases
+    button: Update Now
+  cautions:
+    title: Cautions
+    link: check out this.
+    text: |
+      Please choose update source according to your host's network environment.
+      Low-speed connection between update source and your host will cause long-time loading at checking and downloading page.
+      To change the default update source,
+  errors:
+    connection: "Unable to access to current update source. Details: :error"
+    spec: Current update source is not supported.
+    php: Your PHP version is too low to update. Requires :version or later.
+download:
+  errors:
+    download: 'Failed to download. Error: :error'
+    shasum: File validation failed. Please download again.
+    unzip: Failed to unpack files.
+invalid-action: Invalid action

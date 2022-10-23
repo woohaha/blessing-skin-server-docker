@@ -1,0 +1,44 @@
+---
+database:
+  connection-error: "无法连接至 :type 服务器，请检查你的配置。服务器返回的信息：:msg"
+locked:
+  title: 已安装过
+  text: Blessing Skin Server 看起来已经安装妥当。如果想重新安装，请删除 storage 目录下的 install.lock 文件。
+  button: 返回首页
+updates:
+  success:
+    title: 升级成功
+wizard:
+  master:
+    title: Blessing Skin Server 安装程序
+  welcome:
+    title: 欢迎
+    button: 下一步
+    text: 欢迎使用 Blessing Skin Server v:version！
+  database:
+    title: 填写数据库信息
+    text: 您提供的数据库将用于存储 Blessing Skin 的数据
+    type: 数据库类型
+    host: 数据库服务器地址
+    port: 端口
+    username: 数据库用户名
+    password: 数据库密码
+    db: 数据库名称
+    db-notice: 如果您使用 SQLite，那么您应该填写 SQLite 数据库文件的路径，并且无需填写其它信息
+    prefix: 数据表前缀（可选）
+    prefix-notice: 通常您不需要填写此项，除非您有向同一数据库安装多个 Blessing Skin 的需要
+  info:
+    title: 填写信息
+    button: 开始安装
+    text: 你需要填写一些基本信息。无需担心填错，这些信息以后可以再次修改。
+    admin-email: 管理员邮箱
+    admin-notice: 这是唯一的超级管理员账号，可添加或移除其他管理员。
+    nickname: 昵称
+    password: 密码
+    pwd-notice: '重要：你将需要此密码来登录管理皮肤站，请将其保存在安全的位置。'
+    confirm-pwd: 重复密码
+    site-name: 站点名称
+    site-name-notice: 将会显示在首页以及标题栏
+  finish:
+    title: 安装成功！
+    text: Blessing Skin Server 安装完成。你是否还沉浸在愉悦的安装过程中？很遗憾，一切皆已完成！ :)

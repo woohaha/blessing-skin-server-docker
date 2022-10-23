@@ -1,0 +1,19 @@
+---
+http:
+  msg-403: Vous n'avez pas la permission d'accéder à cette page.
+  msg-404: Il n'y a rien ici.
+  msg-500: Veuillez réessayer plus tard.
+  msg-503: L'application est maintenant en mode maintenance.
+  method-not-allowed: Méthode non autorisée.
+  csrf-token-mismatch: Le jeton ne correspond pas, essayez de recharger la page.
+  ie: Votre navigateur n'est pas pris en charge. Veuillez passer à d'autres navigateurs modernes, tels que Firefox ou Chrome.
+general:
+  title: Une erreur s'est produite
+exception:
+  code: 'Code d''erreur : :code'
+  detail: 'Détails : :msg'
+  message: |
+    Oups, on dirait qu'une erreur s'est produite. (activez APP_DEBUG dans .env pour voir les détails)
+plugins:
+  duplicate: Le plugin [:dir1] a un nom de plugin dupliqué qui est identique au plugin [:dir2]. Veuillez vérifier le répertoire de vos plugins, supprimer l'un d'eux ou utiliser une autre définition de nom.
+  boot: Il y a un problème avec le plugin ":plugin".

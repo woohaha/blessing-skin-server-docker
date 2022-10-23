@@ -1,0 +1,138 @@
+---
+index:
+  total-users: Registrierte Nutzer
+  total-players: Spieler
+  total-textures: Hochgeladene Texturen
+  disk-usage: Speichernutzung
+  overview: Übersicht
+  texture-uploads: Hochgeladene Texturen
+  user-registration: Benutzerregistrierungen
+notifications:
+  send:
+    title: Nachricht verfassen
+    success: Erfolgreich versandt!
+  receiver:
+    title: EmpfängerIn
+    all: Alle Nutzer
+    normal: Einfache Benutzer
+    uid: Angegebene UID
+    email: Angegebene E-Mail
+  title: Betreff
+  content: Inhalt (Markdown wird unterstützt)
+users:
+  operations:
+    non-existent: Benutzer nicht gefunden.
+    no-permission: Sie haben keine Berechtigung diesen Nutzer zu Löschen.
+    email:
+      success: Die E-Mail-Adresse wurde erfolgreich geändert.
+    verification:
+      success: Bestätigungsstatus wurde erfolgreich geändert.
+    nickname:
+      success: Benutzername erfolgreich geändert.
+    password:
+      success: Kennwort erfolgreich geändert.
+    score:
+      success: Punktestand erfolgreich geändert.
+    permission: Berechtigungen aktualisiert.
+    delete:
+      success: Das Konto wurde erfolgreich gelöscht.
+players:
+  no-permission: Sie haben keine Berechtigung diesen Nutzer zu Löschen.
+  textures:
+    non-existent: Keine solche Textur tid.:tid
+    success: Die Texturen von :player wurden aktualisiert.
+  name:
+    success: Spielername wurde aktualisiert auf :player
+  owner:
+    success: Der Spieler :player wurde an den Benutzer :user übertragen.
+  delete:
+    success: Der Spieler wurde erfolgreich gelöscht.
+customize:
+  change-color:
+    title: Designfarbe ändern
+  colors:
+    navbar: Navigationsleiste
+    sidebar:
+      dark: Seitenleiste (dunkel)
+      light: Seitenleiste (Licht)
+i18n:
+  add: Neue Sprache hinzufügen
+  added: Sprache hinzugefügt
+  updated: Sprache aktualisiert
+  deleted: Sprache gelöscht
+  group: Gruppe
+  key: Schlüssel
+  text: Text
+  tip: Wie kann ich diese Seite benutzen?
+status:
+  info: Information
+  health: Gesundheit
+  bs:
+    name: Blessing Skin
+    version: Version
+    env: Anwendungsumgebung
+    debug: Debuggen oder nicht?
+    commit: Änderung einreichen
+    laravel: Laravel Version
+  server:
+    name: Server
+    php: PHP Version
+    web: Webserver Software
+    os: Betriebssystem
+  db:
+    name: Datenbank
+    type: Server
+    host: Host
+    port: Port
+    username: DB-Benutzername
+    database: Datenbankstatus
+    prefix: Tabellen-Präfix
+  plugins: Aktivierte Plugins (:amount)
+plugins:
+  readme: Anleitung
+  operations:
+    title: Aufgaben
+    enabled: ':plugin wurde aktiviert.'
+    unsatisfied:
+      notice: Es gibt Konflikte oder unzufriedene Abhängigkeiten im Plugin, daher können wir es nicht aktivieren. Bitte installieren oder aktualisieren Sie die unten aufgeführten Plugins und deaktivieren Sie diese Konflikte.
+      disabled: '":name" Plugin ist nicht aktiviert.'
+      version: 'Die Version von ":title" erfüllt nicht die Einschränkung ":constraint".'
+      conflict: 'Das Plugin ":title" kann nicht gleichzeitig mit diesem Plugin ausgeführt werden.'
+    disabled: ':plugin wurde deaktiviert.'
+    deleted: Das Plugin wurde erfolgreich gelöscht.
+    no-config-notice: Das Plugin ist nicht installiert oder bietet keine Konfigurationsseite.
+    no-readme-notice: Das Plugin enthält keine Readme-Datei.
+    not-found: Plugin existiert nicht.
+  market:
+    unresolved: Es gibt Konflikte oder unzufriedene Abhängigkeiten im Plugin, daher können wir es nicht aktivieren. Bitte installieren oder aktualisieren Sie die unten aufgeführten Plugins und deaktivieren Sie diese Konflikte.
+    connection-error: Keine Verbindung zur Registry der Plugins. :error
+    non-existent: Das Plugin :plugin existiert nicht.
+    install-success: Plugin installiert.
+update:
+  complete: Aktualisierung abgeschlossen
+  info:
+    title: Update-Informationen
+    up-to-date: Bereits aktuell.
+    available: Neue Version verfügbar.
+    versions:
+      latest: "Neueste Version:"
+      current: "Aktuelle Version:"
+    check-github: GitHub Versionen prüfen
+    button: Jetzt aktualisieren
+  cautions:
+    title: Warnungen
+    link: schaue dir das an.
+    text: |
+      Bitte wählen Sie die Updatequelle entsprechend der Netzwerkumgebung Ihres Hosts aus.
+      Langsame Verbindungen zwischen Updatequelle und Ihrem Host verlangsamen das Überprüfen und Herunterladen der Seite.
+      Um die Standard-Updatequelle zu ändern,
+  errors:
+    connection: "Zugriff auf die aktuelle Updatequelle nicht möglich. Details: :error"
+    spec: Aktuelle Updatequelle wird nicht unterstützt.
+    php: Ihre PHP-Version ist zu niedrig zum Aktualisieren. Benötigt :version oder neuer.
+download:
+  errors:
+    download: 'Download fehlgeschlagen. Fehler: :error'
+    shasum: Dateiüberprüfung fehlgeschlagen. Bitte erneut herunterladen.
+    unzip: Fehler beim Entpacken der Dateien.
+invalid-action: Ungültiger Vorgang

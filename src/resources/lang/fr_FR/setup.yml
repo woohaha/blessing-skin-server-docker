@@ -1,0 +1,44 @@
+---
+database:
+  connection-error: "Impossible de se connecter à la base de données cible :type, veuillez vérifier votre configuration. Le serveur a répondu avec: :msg"
+locked:
+  title: Déjà installé
+  text: Il semble que vous ayez déjà installé Blessing Skin Server. Pour le réinstaller, veuillez supprimer le fichier "install.lock" dans le répertoire "storage".
+  button: Retour à la page d'accueil
+updates:
+  success:
+    title: Mise à jour terminée
+wizard:
+  master:
+    title: Assistant d'installation - Blessing Skin Server
+  welcome:
+    title: Bienvenue
+    button: Suivant
+    text: Bienvenue sur Blessing Skin Server v:version !
+  database:
+    title: Base de données
+    text: La base de données est utilisée pour stocker les données de Blessing Skin.
+    type: Type de base de données
+    host: Hôte de la base de données
+    port: Port de la base de données
+    username: Nom d'utilisateur de la base de données
+    password: Mot de passe de la base de données
+    db: Nom de la base de données
+    db-notice: Vous devez fournir le chemin d'accès au fichier SQLite et il n'est pas nécessaire de remplir les autres champs si vous utilisez SQLite.
+    prefix: Préfixe des tables dans la base de données (facultatif)
+    prefix-notice: Vous n'avez pas besoin d'utiliser cette option à moins que vous ne vouliez installer plusieurs Blessing Skin Server depuis une seule base de données.
+  info:
+    title: Information requise
+    button: Lancer l'installation
+    text: Pour procéder à l'installation, veuillez remplir ce formulaire avec les détails du compte administrateur initial. Ne vous inquiétez pas, vous pourrez toujours modifier ces paramètres plus tard.
+    admin-email: Adresse e-mail de l'administrateur
+    admin-notice: Ceci est le compte super-administrateur UNIQUE qui peut donner ou ANNULER les privilèges d'administration des autres utilisateurs.
+    nickname: Pseudonyme
+    password: Mot de passe
+    pwd-notice: 'Attention: Vous aurez besoin du mot de passe pour vous connecter.'
+    confirm-pwd: Confirmer le mot de passe
+    site-name: Nom du site
+    site-name-notice: Ceci sera affiché sur chaque page.
+  finish:
+    title: Installation terminée
+    text: Blessing Skin Server a été installé. Merci, et profitez-en !

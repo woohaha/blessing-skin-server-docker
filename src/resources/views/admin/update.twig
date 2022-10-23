@@ -1,0 +1,93 @@
+{% extends 'admin.base' %}
+
+{% block title %}{{ trans('general.check-update') }}{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card card-primary">
+        <div class="card-header">
+          <h3 class="card-title">{{ trans('admin.update.info.title') }}</h3>
+        </div>
+        <div class="card-body">
+          {% if can_update %}
+            <div class="callout callout-info">
+              {{ trans('admin.update.info.available') }}
+            </div>
+            <div class="container-fluid">
+              <div class="row mb-3">
+                <div class="col-sm-4">
+                  {{ trans('admin.update.info.versions.latest') }}
+                </div>
+                <div class="col-sm-8">
+                  v{{ info.latest }}
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  {{ trans('admin.update.info.versions.current') }}
+                </div>
+                <div class="col-sm-8">
+                  v{{ info.current }}
+                </div>
+              </div>
+            </div>
+          {% else %}
+            {% if error %}
+              <div class="callout callout-danger">
+                {{ trans('admin.update.errors.connection', {error: error}) }}
+              </div>
+            {% else %}
+              <div class="callout callout-success">
+                {{ trans('admin.update.info.up-to-date') }}
+              </div>
+            {% endif %}
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  {{ trans('admin.update.info.versions.current') }}
+                </div>
+                <div class="col-sm-8">
+                  v{{ info.current }}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+        <div class="card-footer">
+          {% if can_update %}
+            <button class="btn bg-primary" id="update">
+              {{ trans('admin.update.info.button') }}
+            </button>
+          {% else %}
+            <button class="btn bg-primary" disabled="disabled">
+              {{ trans('admin.update.info.button') }}
+            </button>
+          {% endif %}
+          <a
+            target="_blank"
+            class="btn btn-default float-right"
+            href="https://github.com/bs-community/blessing-skin-server/releases"
+          >
+            {{ trans('admin.update.info.check-github') }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-info">
+        <div class="card-header">
+          <h3 class="card-title">
+            {{ trans('admin.update.cautions.title') }}
+          </h3>
+        </div>
+        <div class="card-body">
+          {{ trans('admin.update.cautions.text')|nl2br }}
+          <a target="_blank" href="https://blessing.netlify.com/update-sources.html">
+            {{ trans('admin.update.cautions.link') }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

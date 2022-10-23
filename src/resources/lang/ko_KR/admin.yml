@@ -1,0 +1,138 @@
+---
+index:
+  total-users: 등록된 사용자
+  total-players: 플레이어
+  total-textures: 택스쳐 업로드됨
+  disk-usage: 디스크 사용량
+  overview: 개요(Overview)
+  texture-uploads: 택스쳐 업로드
+  user-registration: 사용자 등록
+notifications:
+  send:
+    title: 알림 보내기
+    success: 성공적으로 전송되었습니다!
+  receiver:
+    title: 받는 수량
+    all: 모든 사용자
+    normal: 일반 유저
+    uid: 지정된 UID
+    email: 지정된 이메일
+  title: 제목
+  content: 내용(Markdown 지원)
+users:
+  operations:
+    non-existent: 그런 사용자가 없습니다.
+    no-permission: 권한이 없습니다.
+    email:
+      success: 성공적으로 이메일 주소가 변경되었습니다
+    verification:
+      success: Account verification status toggled successfully.
+    nickname:
+      success: 닉네임이 성공적으로 변경되었습니다.
+    password:
+      success: 비밀번호 변경에 성공했습니다
+    score:
+      success: 수정 성공
+    permission: 권한이 업데이트 되었습니다!
+    delete:
+      success: 계정이 성공적으로 삭제되었습니다.
+players:
+  no-permission: 이 사용자을 설정하는 권한이 없습니다.
+  textures:
+    non-existent: 텍스처 tid.:tid 가 존재하지 않음
+    success: The textures of :player has been updated.
+  name:
+    success: Player name has been updated to :player
+  owner:
+    success: The player :player was transferred to user :user.
+  delete:
+    success: 플레이어를 성공적으로 삭제되었습니다.
+customize:
+  change-color:
+    title: 태마 색상변경
+  colors:
+    navbar: 탑 내비게이션 바
+    sidebar:
+      dark: 사이드바 (다크)
+      light: 사이드바 (라이트)
+i18n:
+  add: Add New Language Line
+  added: Language line added.
+  updated: Language line updated.
+  deleted: Language line deleted.
+  group: 그룹
+  key: 키
+  text: 텍스트
+  tip: 본 패이지의 사용 방법
+status:
+  info: 정보
+  health: 상태
+  bs:
+    name: Blessing Skin
+    version: 버전
+    env: 앱플리케이션 환경
+    debug: Debugging or Not?
+    commit: 재출
+    laravel: Laravel 버전
+  server:
+    name: 서버
+    php: PHP 버전
+    web: 웹 서버 소프트웨어
+    os: 운영 체제
+  db:
+    name: 데이터베이스
+    type: 서버
+    host: 호스트
+    port: 포트
+    username: 사용자명
+    database: 데이터베이스
+    prefix: 테이블 접두사
+  plugins: 활성화된 플러그인 수 (:amount)
+plugins:
+  readme: Read Me
+  operations:
+    title: 동작
+    enabled: 플러그인이 활성화되었습니다.
+    unsatisfied:
+      notice: There are conflicts or unsatisfied dependencies in the plugin, therefore we can't enable it. Please install or update the plugins listed below, and disable those have conflicts.
+      disabled: '":name" 플러그인을 활성화 상태가 안닙니다'
+      version: '":title" 의 버전이 ":constraint"에 비준수합니다'
+      conflict: '":title" 플러그인와 본 플러그인이 동시에 사용할수없음.'
+    disabled: 플러그인이 비활성화되었습니다.
+    deleted: 플러그인이 삭제되었습니다.
+    no-config-notice: 플러그인이 설정패이지를 재공하지않음 또는 설치하지않음
+    no-readme-notice: The plugin doesn't contain a readme file.
+    not-found: No such plugin.
+  market:
+    unresolved: There are conflicts or unsatisfied dependencies in the plugin, therefore we can't download it. Please install or update the plugins listed below, and disable those have conflicts.
+    connection-error: Unable to connect to the plugins registry. :error
+    non-existent: The plugin :plugin does not exist.
+    install-success: Plugin was installed.
+update:
+  complete: Update completed
+  info:
+    title: Update Information
+    up-to-date: Already up-to-date.
+    available: New version available.
+    versions:
+      latest: "Latest Version:"
+      current: "Current Version:"
+    check-github: Check GitHub Releases
+    button: Update Now
+  cautions:
+    title: Cautions
+    link: check out this.
+    text: |
+      Please choose update source according to your host's network environment.
+      Low-speed connection between update source and your host will cause long-time loading at checking and downloading page.
+      To change the default update source,
+  errors:
+    connection: "Unable to access to current update source. Details: :error"
+    spec: Current update source is not supported.
+    php: Your PHP version is too low to update. Requires :version or later.
+download:
+  errors:
+    download: 'Failed to download. Error: :error'
+    shasum: File validation failed. Please download again.
+    unzip: Failed to unpack files.
+invalid-action: Invalid action

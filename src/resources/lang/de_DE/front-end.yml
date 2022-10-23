@@ -1,0 +1,273 @@
+---
+auth:
+  login: Anmeldung
+  loggingIn: Anmeldung erfolgt
+  tooManyFails:
+    captcha: Zu viele falsche Anmeldungen! Bitte gib das CAPTCHA ein.
+    recaptcha: Zu viele falsche Anmeldungen! Bitte gib das reCAPTCHA ein.
+  emptyEmail: Leere E-Mail-Adresse.
+  invalidConfirmPwd: Die Passwörter stimmen nicht überein.
+  emptyNickname: Empty nickname.
+  register: Registrieren
+  registering: Registrierung läuft
+  send: Senden
+  sending: Senden...
+  reset: Zurücksetzen
+  resetting: Wird zurückgesetzt...
+  nickname: Nickname
+  player-name: Minecraft-Spielername
+  email: E-Mail-Adresse
+  identification: E-Mail oder Spielername
+  password: Passwort
+  captcha: CAPTCHA
+  change-captcha: Klicken, für ein neues CAPTCHA-Bild.
+  login-link: Bereits registriert? Hier anmelden.
+  forgot-link: Passwort vergessen?
+  keep: Angemeldet bleiben
+  repeat-pwd: Passwort wiederholen
+  nickname-intro: Whatever you like expect special characters
+  player-name-intro: Player name in Minecraft, can be changed later
+  forgot:
+    login-link: Ich erinnere mich noch
+skinlib:
+  private: Private
+  anonymous: Bitte zuerst anmelden.
+  reset: Filter zurücksetzen
+  addToCloset: Zum Kleiderschrank hinzufügen
+  removeFromCloset: Aus Kleiderschrank entfernen
+  setItemName: Benenne diese Textur
+  applyNotice: You can apply it to player at your closet
+  emptyItemName: Leerer Texturname.
+  setNewTextureName: 'Lege einen neuen Namen für diese Textur fest:'
+  emptyNewTextureName: Leerer Texturname.
+  seeMyUpload: Meine Uploads
+  apply: Anwenden
+  filter:
+    skin: (Automatisch)
+    steve: (Steve)
+    alex: (Alex)
+    cape: (Cape)
+    uploader: 'Benutzer (UID = :uid) hochgeladen'
+    allUsers: Alle Nutzer
+  sort:
+    title: Anordnen nach
+    time: Neueste
+    likes: Beliebteste
+  emptyTextureName: Leerer Texturname.
+  emptyUploadFile: Sie haben noch keine Dateien hochgeladen.
+  fileExtError: 'Fehler: Texturen sollten PNG-Dateien sein.'
+  uploading: Uploading
+  setAsPrivate: Auf Privat stellen
+  setAsPublic: Auf Öffentlich stellen
+  setPublicNotice: Sure to set this as public texture?
+  setPrivateNotice: Sure to set this as private texture?
+  deleteNotice: Are you sure to delete this texture?
+  setNewTextureModel: "Please select a new texture model:"
+  upload:
+    texture-name: Texture Name
+    texture-type: Texture Type
+    select-file: Datei auswählen
+    privacy-notice: Prevent it from being visible at skin library.
+    set-as-private: Make it Private
+    button: Hochladen
+    cost: Dies kostet dich :score Punkte.
+    award: You'll be awarded :score score(s) by uploading public texture.
+  show:
+    anonymous: Sie müssen sich anmelden, um den Kleiderschrank zu verwenden
+    likes: People who like this
+    detail: Details
+    name: Texturname
+    edit: bearbeiten
+    model: Modell
+    size: Dateigröße
+    uploader: Hochgeladen von
+    upload-at: Hochgeladen am
+    download: Herunterladen
+    delete-texture: Textur löschen
+    manage-notice: The texture which was deleted or setted to private will be removed from the closet of everyone who had favorited it.
+  report:
+    title: Melden
+    reason: Tell us reason please.
+    positive: To encourage positive contributions to the skinlib, we will reward who reported inappropriate content with :score scores. However, if any malicious reporting behaviors were found, all scores rewarded will be taken back.
+    negative: To mitigate the impact of malicious reports, we will require :score scores for submitting a texture report. Don't worry. The suspended scores and additional reward will be sent to your account after your report reviewed by administrators.
+user:
+  signRemainingTime: 'Available after :time :unit'
+  timeUnitHour: h
+  timeUnitMin: min
+  emptyClosetMsg: >-
+    <p>Nothing in your closet...</p><p>Why not explore the <a href=":url">Skin Library</a> for a while?</p>
+  renameItem: Eintrag umbenennen
+  removeItem: Aus Kleiderschrank entfernen
+  setAsAvatar: Als Avatar festlegen
+  viewInSkinlib: In der Skingallerie anzeigen
+  switch2dPreview: Zur 2D-Vorschau wechseln
+  switch3dPreview: Wechsel zur Vorschau
+  removeFromClosetNotice: Sure to remove this texture from your closet?
+  emptySelectedTexture: Kein Textur ausgewählt.
+  renameClosetItem: 'Gib einen neuen Namen für dieses Element ein:'
+  changePlayerName: 'Please enter the player name:'
+  emptyPlayerName: Empty player name.
+  deletePlayer: Sure to delete this player?
+  deletePlayerNotice: It's permanent. No backups.
+  chooseClearTexture: Choose texture types you want to clear
+  noClearChoice: Kein Typ ausgewählt
+  setAvatar: Sind Sie sicher, dies als Ihr Avatar zu setzen?
+  setAvatarNotice: Das Kopfsegment des Skins wird verwendet.
+  resetAvatarConfirm: Möchten Sie Ihren Avatar wirklich zurücksetzen?
+  typeToSearch: Suchen…
+  useAs: Anwenden...
+  resetSelected: Ausgewählte löschen
+  closet:
+    upload: Textur hochladen
+    use-as:
+      title: Which player should be applied to?
+      empty: It seems that you own no player...
+  used:
+    title: Verwendete Ressourcen
+    players: Registered players
+    storage: Speichernutzung
+  cur-score: Aktuelle Punktzahl
+  score-notice: Klicken Sie auf die Punktzahl, für weitere Informationen.
+  sign: Punkte einsammeln
+  player:
+    operation: Operations
+    edit-pname: Edit Name
+    delete-texture: Clear Textures
+    delete-player: Delete
+    add-player: Add new player
+    texture-empty: Nothing
+  verification:
+    title: Verifiziere dein Konto
+    message: Du musst deine E-Mail-Adresse verifizieren, bevor du den Skin Hosting-Dienst nutzen kannst. Du hast die E-Mail noch nicht erhalten?
+    resend: Klicke hier, um die Bestätigungsmail erneut zu senden.
+    sending: Wird gesendet...
+  oauth:
+    id: Client-ID
+    name: App-Name
+    secret: Client Secret
+    redirect: Callback URL
+    modifyName: Appnamen ändern.
+    modifyUrl: Callback URL ändern.
+    create: Neue Anwendung erstellen
+    confirmRemove: Sind Sie sicher, diese App löschen zu wollen? Sie können dies nicht rückgängig machen.
+admin:
+  operationsTitle: Operations
+  permission: Berechtigung
+  deleteUser: Löschen
+  changeEmail: E-Mail-Adresse bearbeiten
+  newUserEmail: 'Bitte neue E-Mail Adresse eingeben:'
+  verification: E-Mail-Adresse bestätigen
+  toggleVerification: Bestätigungsstatus umschalten
+  changeNickName: Edit Nickname
+  newUserNickname: 'Please enter the new nickname:'
+  changePassword: Passwort ändern
+  newUserPassword: 'Bitte geben Sie ein neues Passwort ein:'
+  changeScore: Punktzahl bearbeiten
+  newScore: 'Bitte geben Sie eine neue Punktzahl ein:'
+  changePermission: Change permission
+  newPermission: 'Please select new permission:'
+  deleteUserNotice: Are you sure to delete this user? It' permanent.
+  banned: Gesperrt
+  normal: Normal
+  admin: Administrator
+  superAdmin: Super-Administrator
+  unverified: Unverifiziert
+  verified: Verifiziert
+  pidNotice: >-
+    Please enter the tid of texture. Inputing 0 can clear texture of this player.
+  changeTexture: Texturen ändern
+  changePlayerName: Spielernamen ändern
+  changeOwner: Besitzer ändern
+  textureType: Texturen-Typ
+  deletePlayer: Löschen
+  changePlayerOwner: 'Please enter the id of user which this player should be transferred to:'
+  deletePlayerNotice: Are you sure to delete this player? It' permanent.
+  changePlayerNameNotice: 'Bitte geben Sie einen neuen Spielernamen ein:'
+  emptyPlayerName: Spielername darf nicht leer sein.
+  configurePlugin: Konfigurieren
+  deletePlugin: Löschen
+  noDependencies: Keine Abhängigkeiten
+  pluginTitle: Plugin
+  pluginAuthor: Autor
+  pluginVersion: Version
+  pluginReadme: Anleitung
+  pluginDescription: Beschreibung
+  pluginDependencies: Abhängigkeiten
+  installPlugin: Installieren
+  pluginInstalling: Installiere...
+  updatePlugin: Akutalisieren
+  pluginUpdating: Aktualisierung läuft...
+  confirmUpdate: Möchten Sie ":plugin" von :old auf :new aktualisieren?
+  enablePlugin: Aktivieren
+  disablePlugin: Deaktivieren
+  confirmDeletion: Soll dieses Plugin wirklich gelöscht werden?
+  uploadArchive: Archiv hochladen
+  uploadArchiveNotice: Installieren Sie ein Plugin, indem Sie ein Zip-Archiv hochladen.
+  downloadRemote: Vom Server herunterladen
+  downloadRemoteNotice: Installieren Sie ein Plugin, indem Sie ein Zip-Archiv von einer entfernten URL herunterladen.
+  updateButton: Jetzt aktualisieren
+  downloading: Wird heruntergeladen...
+  i18n:
+    group: Gruppe
+    key: Schlüssel
+    text: Text
+    empty: (Leer)
+    modify: Ändern
+    delete: Löschen
+    updating: 'Bitte geben Sie einen neuen Text ein:'
+    confirmDelete: Sind Sie sicher? Diese Aktion ist unwiderruflich.
+report:
+  tid: Textur ID
+  reporter: Gemeldet von
+  reason: Begründung
+  status-title: Status
+  status:
+    - Ausstehend
+    - Abgeschlossen
+    - Abgelehnt
+  time: Meldezeit
+  delete: Löschen
+  ban: Sperren
+  reject: Ablehnen
+general:
+  skin: Skin
+  cape: Umhang
+  fatalError: Schwerer Fehler
+  confirmLogout: Wirklich abmelden?
+  confirm: OK
+  cancel: Abbrechen
+  submit: Speichern
+  close: Schließen
+  more: Mehr
+  tip: Hinweis
+  noResult: Keine Ergebnisse.
+  texturePreview: Texturvorschau
+  walk: Gehen
+  run: Laufen
+  rotation: Rotation
+  pause: Pausieren
+  reset: Zurücksetzen
+  skinlib: Gallerie
+  wait: Bitte warten...
+  csrf: Diese Seite ist veraltet. Bitte aktualisieren Sie sie.
+  user:
+    email: E-Mail-Adresse
+    nickname: Nick Name
+    score: Punkte
+    register-at: Registriert am
+  player:
+    owner: Besitzer
+    player-name: Spielername
+    previews: Texturvorschau
+    last-modified: Letzte Änderung
+colors:
+  black: Schwarz
+  white: Weiß
+  gray: Grau
+  prev: Vorheriger Hintergrund
+  next: Nächster Hintergrund
+vendor:
+  datatable:
+    search: Suchen
+    prev: Vorheriges
+    next: Nächstes

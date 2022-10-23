@@ -1,0 +1,36 @@
+{% extends 'auth.base' %}
+
+{% block title %}{{ trans('auth.bind.title') }}{% endblock %}
+
+{% block content %}
+  <p class="login-box-msg">{{ trans('auth.bind.message') }}</p>
+  <form method="post" id="login-form" action="{{ url('/auth/bind') }}">
+    {{ csrf_field() }}
+    <div class="input-group mb-3">
+      <input
+        name="email"
+        type="email"
+        class="form-control"
+        placeholder="{{ trans('auth.email') }}"
+      >
+      <div class="input-group-append">
+        <div class="input-group-text">
+          <span class="fas fa-envelope" />
+        </div>
+      </div>
+    </div>
+
+    <p>{{ trans('auth.bind.introduction') }}</p>
+
+    {% if errors.any %}
+      <div class="alert alert-warning">
+        <i class="icon fas fa-exclamation-triangle" />
+        {{ errors.first }}
+      </div>
+    {% endif %}
+
+    <button type="submit" class="btn btn-primary btn-block mt-3">
+      {{ trans('auth.bind.button') }}
+    </button>
+  </form>
+{% endblock %}

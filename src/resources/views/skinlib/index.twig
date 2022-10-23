@@ -1,0 +1,13 @@
+{% extends 'skinlib.base' %}
+
+{% block title %}{{ trans('general.skinlib') }}{% endblock %}
+
+{% block content %}
+  <div class="content-wrapper"></div>
+{% endblock %}
+
+{% block before_foot %}
+  <script id="blessing-extra" type="application/json">
+    {{ {currentUid: auth_user().uid}|json_encode|raw }}
+  </script>
+{% endblock %}

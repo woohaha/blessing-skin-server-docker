@@ -1,0 +1,59 @@
+---
+index: 首页
+skinlib: 皮肤库
+user-center: 用户中心
+logout: 登出
+login: 登录
+register: 现在注册
+profile: 个人资料
+admin-panel: 管理面板
+explore: 浏览
+manage: 管理
+anonymous: 未登录
+back: 返回
+dashboard: 仪表盘
+my-closet: 我的衣柜
+my-reports: 我的举报
+developer: 高级功能
+oauth-manage: OAuth2 应用
+player-manage: 角色管理
+user-manage: 用户管理
+report-manage: 举报管理
+plugin-manage: 插件管理
+plugin-market: 插件市场
+plugin-configs: 插件配置
+customize: 个性化
+i18n: 多语言
+options: 站点配置
+score-options: 积分配置
+res-options: 资源配置
+status: 运行状态
+check-update: 检查更新
+download-update: 下载更新
+close: 关闭
+skin: 皮肤
+cape: 披风
+submit: 提交
+cancel: 取消
+yes: true
+no: false
+op-success: 操作成功
+unknown: 未知
+notice: 提示
+illegal-parameters: 非法参数
+private: 私密
+public: 公开
+unexistent-user: 不存在的用户
+player-banned: 该角色拥有者已被本站封禁
+texture-deleted: 请求的材质已被删除
+user:
+  email: 邮箱
+  nickname: 昵称
+  password: 密码
+  score: 积分
+  register-at: 注册时间
+player:
+  owner: 拥有者
+  player-name: 角色名
+  previews: 预览材质
+  last-modified: 修改时间

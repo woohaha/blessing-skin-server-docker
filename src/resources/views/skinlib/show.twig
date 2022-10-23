@@ -1,0 +1,36 @@
+{% extends 'skinlib.base' %}
+
+{% block title %}{{ texture.name }}{% endblock %}
+
+{% block content %}
+  <div class="content-wrapper">
+    <div class="container">
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div>
+              <h1 class="m-0">{{ trans('skinlib.show.title') }}</h1>
+            </div>
+            <div>
+              <div class="breadcrumb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="content">
+        <div class="container-fluid">
+          {{ include('shared.grid') }}
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="modals"></div>
+{% endblock %}
+
+{% block before_foot %}
+  <script id="blessing-extra" type="application/json">
+    {{ extra|json_encode|raw }}
+  </script>
+{% endblock %}

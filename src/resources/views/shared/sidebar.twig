@@ -1,0 +1,53 @@
+<aside class="main-sidebar sidebar-{{ sidebar_color }} elevation-3">
+  <a href="{{ url('/') }}" class="brand-link text-center">
+    <span class="brand-text font-weight-light">{{ site_name }}</span>
+  </a>
+  <div class="sidebar">
+    {{ include('shared.user-panel') }}
+    <nav class="mt-2">
+      <ul
+        class="nav nav-pills nav-sidebar flex-column nav-child-indent"
+        data-widget="treeview"
+        role="menu"
+      >
+
+        {% if scope == 'user' %}
+
+          <li class="nav-header">{{ trans('general.user-center') }}</li>
+          {{ include('shared.side-menu', {type: 'user'}) }}
+          <li class="nav-header">{{ trans('general.explore') }}</li>
+          {{ include('shared.side-menu', {type: 'explore'}) }}
+          {% if auth_user().admin %}
+            <li class="nav-header">{{ trans('general.manage') }}</li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('admin') }}">
+                <i class="nav-icon fas fa-cog"></i>
+                <p>{{ trans('general.admin-panel') }}</p>
+              </a>
+            </li>
+          {% endif %}
+
+        {% elseif scope == 'admin' %}
+
+          <li class="nav-header">{{ trans('general.admin-panel') }}</li>
+          {{ include('shared.side-menu', {type: 'admin'}) }}
+          <li class="nav-header">{{ trans('general.back') }}</li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('user') }}">
+              <i class="nav-icon fas fa-user"></i> &nbsp;
+              <p>{{ trans('general.user-center') }}</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('skinlib') }}">
+              <i class="nav-icon fas fa-archive"></i> &nbsp;
+              <p>{{ trans('general.skinlib') }}</p>
+            </a>
+          </li>
+
+        {% endif %}
+
+      </ul>
+    </nav>
+  </div>
+</aside>

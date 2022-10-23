@@ -1,0 +1,85 @@
+---
+login:
+  title: 로그인
+  message: Log in to manage your skin & players
+  success: 로그인 성공
+check:
+  anonymous: Illegal access. Please log in first.
+  verified: To access this page, you should verify your email address first.
+  admin: Only admins are permitted to access this page.
+  banned: You are banned on this site. Please contact the admin.
+register:
+  title: 회원가입
+  message: Welcome to :sitename!
+  success: Your account was registered. Redirecting...
+  max: You can't register more than :regs accounts.
+forgot:
+  title: 비밀번호를 잊으셨나요
+  message: We will send you an E-mail to verify.
+  disabled: Password resetting is not available.
+  frequent-mail: You click the send button too fast. Wait for some minutes.
+  unregistered: 이 이메일 주소는 등록되지 않았습니다.
+  success: Mail sent, please check your inbox. The link will be expired in 1 hour.
+  failed: Failed to send verification mail. :msg
+  ignore: If you haven't signed up on our site, please ignore this email. No unsubscribing is required.
+  reset: 비밀번호 재설정
+  notice: This mail is sending automatically, no reponses will be sent if you reply.
+  mail:
+    title: ':sitename 에서 비밀번호 재설정하기'
+    message: ':sitename 의 사용자 계정 비밀번호 재설정을 요청 하셨기 때문에 이메일이 전송되었습니다.'
+    reset: 'To reset your password, please visit: <a href=":url">:url</a>'
+    ignore: 암호 재설정을 요청하지 않은 경우 추가 조치가 필요하지 않습니다.
+reset:
+  title: 비밀번호 초기화
+  button: 재설정
+  invalid: 유효하지 않은 링크
+  expired: 이 링크는 만료 되었습니다.
+  message: ':username, reset your password here.'
+  success: 비밀번호 변경에 성공했습니다
+bind:
+  title: Bind Email
+  button: Bind
+  message: You need to provide your email adderss to continue.
+  introduction: We won't send you any spam.
+  registered: 이미 사용 중인 이메일 주소입니다.
+verify:
+  title: Email Verification
+  invalid: 유효하지 않은 링크
+  not-matched: 이메일 주소가 일치하지 않습니다.
+validation:
+  user: 해당 유저를 찾을 수 없습니다.
+  password: Wrong password.
+logout:
+  success: 로그아웃 됐습니다
+oauth:
+  authorization:
+    title: 인증
+    introduction: A 3rd-party application ":name" is requesting permission to access your account.
+    button: 승인
+    permissions: 권한
+  scope:
+    user:
+      read: Sign you in and read your profile
+    notification:
+      read: Allows the app to read your notifications.
+      readwrite: Allows the app to send notifications.
+    player:
+      read: Allows the app to read your players.
+      readwrite: Allows the app to create, read, update and delete your players.
+    closet:
+      read: Allows the app to read your closet items.
+      readwrite: Allows the app to create, read, update and delete your closet items.
+    users-management:
+      read: Allows the app to read site's users.
+      readwrite: Allows the app to create, read, update and delete site's users.
+    players-management:
+      read: Allows the app to read site's players.
+      readwrite: Allows the app to create, read, update and delete site's players.
+    closet-management:
+      read: Allows the app to read user's of your site closet items.
+      readwrite: Allows the app to create, read, update and delete user's closet items.
+    reports-management:
+      read: Allows the app to read user's reports.
+      readwrite: Allows the app to read and review user's reports.
+email: Email
+register-link: Register a new account

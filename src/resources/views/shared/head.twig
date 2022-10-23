@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<meta name="theme-color" content="{{ theme_color }}">
+<meta name="keywords" content="{{ seo.keywords }}">
+<meta name="description" content="{{ seo.description }}">
+{{ seo.extra|striptags('<meta>')|raw }}
+<link rel="preconnect" href="https://unpkg.com/" crossorigin>
+{% if custom_cdn_host %}
+  <link rel="preconnect" href="{{ custom_cdn_host }}" id="cdn-host" crossorigin>
+{% endif %}
+<script id="blessing-globals" type="application/json">{{ blessing|json_encode|raw }}</script>
+<script src="{{ url('/meta.js') }}"></script>
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" crossorigin>
+{{ include('assets.style', ignore_missing = true) }}
+{% for link in links %}
+  <link{% for attribute, value in link %} {{ attribute }}="{{ value|raw }}"{% endfor %}>
+{% endfor %}
+<link rel="shortcut icon" href="{{ favicon }}">
+<link rel="icon" type="image/png" href="{{ favicon }}" sizes="192x192">
+<link rel="apple-touch-icon" href="{{ favicon }}" sizes="180x180">
+{% if inline_css %}
+  <style>{{ inline_css|striptags|raw }}</style>
+{% endif %}
+{{ extra_head|join('\n')|raw }}

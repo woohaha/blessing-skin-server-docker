@@ -1,0 +1,43 @@
+{% extends 'auth.base' %}
+
+{% block title %}
+	{{ trans('auth.oauth.authorization.title') }}
+{% endblock %}
+
+{% block content %}
+	<p class="login-box-msg">
+		{{ trans('auth.oauth.authorization.introduction', {name: client.name}) }}
+	</p>
+	{% if scopes %}
+		<div class="scopes">
+			<p>
+				<strong>{{ trans('auth.oauth.authorization.permissions') }}</strong>
+			</p>
+			<ul>
+				{% for scope in scopes %}
+					<li>{{ trans(scope.description) }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
+	<div class="d-flex justify-content-between">
+		<form method="post" action="{{ route('passport.authorizations.approve', {}, false) }}">
+			{{ csrf_field() }}
+			<input type="hidden" name="state" value="{{ request.state }}">
+			<input type="hidden" name="client_id" value="{{ client.id }}">
+			<button type="submit" class="btn btn-success btn-block pl-5 pr-5">
+				{{ trans('auth.oauth.authorization.button') }}
+			</button>
+		</form>
+
+		<form method="post" action="{{ route('passport.authorizations.deny', {}, false) }}">
+			{{ csrf_field() }}
+			{{ method_field('DELETE') }}
+			<input type="hidden" name="state" value="{{ request.state }}">
+			<input type="hidden" name="client_id" value="{{ client.id }}">
+			<button class="btn btn-default btn-block pl-5 pr-5">
+				{{ trans('general.cancel') }}
+			</button>
+		</form>
+	</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+---
+index: Домашняя страница
+skinlib: Библиотека скинов
+user-center: Меню пользователя
+logout: Выйти
+login: Войти
+register: Зарегистрироваться
+profile: Профиль
+admin-panel: Панель администратора
+explore: Обзор
+manage: Управлeние
+anonymous: Гость
+back: Назад
+dashboard: Главная страница
+my-closet: Гардероб
+my-reports: Отчёты
+developer: Дополнительные параметры
+oauth-manage: OAuth2 приложения
+player-manage: Игроки
+user-manage: Пользователи
+report-manage: Отчёты
+plugin-manage: Плагины
+plugin-market: Магазин плагинов
+plugin-configs: Конфигурации плагинов
+customize: Настроить
+i18n: Локализация
+options: Параметры
+score-options: Параметры счёта
+res-options: Параметры ресурсов
+status: Статус
+check-update: Проверить обновления
+download-update: Загрузить обновление
+close: Закрыть
+skin: Скин
+cape: Плащ
+submit: Подтвердить
+cancel: Отмена
+yes: true
+no: false
+op-success: Успешно выполнено.
+unknown: Неизвестно
+notice: Примечание
+illegal-parameters: Недопустимые параметры.
+private: Приватный
+public: Публичный
+unexistent-user: Пользователь не существует.
+player-banned: Владелец этого игрока был заблокирован.
+texture-deleted: Запрашиваемая текстура удалена.
+user:
+  email: Адрес электронной почты
+  nickname: Ник
+  password: Пароль
+  score: Счёт
+  register-at: Дата регистрации
+player:
+  owner: Владелец
+  player-name: Имя игрока
+  previews: Предпросмотр текстуры
+  last-modified: Последнее изменение

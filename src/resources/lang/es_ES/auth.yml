@@ -1,0 +1,85 @@
+---
+login:
+  title: Iniciar sesión
+  message: Iniciar sesión para gestionar tu skin y jugadores
+  success: Iniciado exitosamente.
+check:
+  anonymous: Acceso ilegal. Favor iniciarse primero.
+  verified: Debes verificar su correo electrónico para accesar esta página.
+  admin: Sólo administradores están permitidos accesar esta página.
+  banned: Estás baneado. Favor contactar el administrador.
+register:
+  title: Crear cuenta
+  message: '¡Bienvenidos a :sitename!'
+  success: Su cuenta fue creada. Redirigiendo...
+  max: No puede registrar más de :regs cuentas.
+forgot:
+  title: Olvidó la contraseña
+  message: Le enviaremos un correo electrónico para verificar.
+  disabled: El restablecimiento de contraseña no está disponible.
+  frequent-mail: Haz hecho clic en el botón de enviar demasiado rápido. Espera unos minutos.
+  unregistered: La dirección de correo electrónico no está registrada.
+  success: Correo enviado, por favor comprueba tu bandeja de entrada. El enlace expirará en 1 hora.
+  failed: Se ha producido un error al enviar el correo electrónico de verificación. :msg
+  ignore: Si no solicitó un restablecimiento de contraseña, no se requiere ninguna acción adicional.
+  reset: Restablezca su contraseña
+  notice: Este correo electrónico se envía automáticamente, no se enviará ninguna respuesta si responde.
+  mail:
+    title: Restablezca su contraseña en :sitename
+    message: Está recibiendo este correo electrónico porque solicitó restablecer la contraseña de su cuenta de usuario en :sitename.
+    reset: 'Para restablecer su contraseña, por favor visite: <a href=":url">:url</a>'
+    ignore: Si no solicitó un restablecimiento de contraseña, no se requiere ninguna acción adicional.
+reset:
+  title: Restablecer contraseña
+  button: Restablecer
+  invalid: Enlace inválido.
+  expired: Este enlace ha caducado.
+  message: ':username, reset your password here.'
+  success: Contraseña restablecida con éxito.
+bind:
+  title: Enlazar email
+  button: Enlazar
+  message: Necesitas proporcionar su dirección de correo electrónico para continuar.
+  introduction: No te enviaremos ningún correo spam.
+  registered: Esta dirección de correo electrónico ya está en uso.
+verify:
+  title: Verificación de correo electrónico
+  invalid: Enlace inválido.
+  not-matched: El Email no coincide.
+validation:
+  user: No existe tal usuario.
+  password: Contraseña incorrecta.
+logout:
+  success: Ha cerrado su sesión.
+oauth:
+  authorization:
+    title: Autorización
+    introduction: Una aplicación de terceros ":name" está solicitando permiso para acceder a su cuenta.
+    button: Autorizar
+    permissions: Permissions
+  scope:
+    user:
+      read: Sign you in and read your profile
+    notification:
+      read: Allows the app to read your notifications.
+      readwrite: Allows the app to send notifications.
+    player:
+      read: Allows the app to read your players.
+      readwrite: Allows the app to create, read, update and delete your players.
+    closet:
+      read: Allows the app to read your closet items.
+      readwrite: Allows the app to create, read, update and delete your closet items.
+    users-management:
+      read: Allows the app to read site's users.
+      readwrite: Allows the app to create, read, update and delete site's users.
+    players-management:
+      read: Allows the app to read site's players.
+      readwrite: Allows the app to create, read, update and delete site's players.
+    closet-management:
+      read: Allows the app to read user's of your site closet items.
+      readwrite: Allows the app to create, read, update and delete user's closet items.
+    reports-management:
+      read: Allows the app to read user's reports.
+      readwrite: Allows the app to read and review user's reports.
+email: Email
+register-link: Registrar una nueva cuenta

@@ -1,0 +1,20 @@
+---
+http:
+  msg-403: 您无权访问此页面。
+  msg-404: 这里什么都没有哦
+  msg-500: 服务器内部错误，请稍后再试。
+  msg-503: 网站维护中
+  method-not-allowed: 不允许的 HTTP 请求方法
+  csrf-token-mismatch: Token 不正确，请尝试刷新页面
+  ie: 不支持此浏览器，请使用其它现代浏览器（如 Firefox 或 Chrome）。
+general:
+  title: 出现错误
+exception:
+  code: '错误码：:code'
+  detail: '详细信息：:msg'
+  message: |
+    如果你是访客，这说明网站程序出现了一些错误，请稍后再试或者联系站长。
+    如果你是站长，那么请开启 .env 中的 APP_DEBUG 查看详细信息。
+plugins:
+  duplicate: '【插件定义重复】:dir1 目录下的插件与 :dir2 目录下的插件使用了相同的 name 定义并造成了冲突。请检查你的插件目录，移除其中一个插件或者使用不同的 name 属性。'
+  boot: '「:plugin」插件存在错误，无法加载。'

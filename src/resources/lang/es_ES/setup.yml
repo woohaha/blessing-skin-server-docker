@@ -1,0 +1,44 @@
+---
+database:
+  connection-error: "No se puede conectar a la base de datos :type, favor comprobar su configuración. El servidor respondió con: :msg"
+locked:
+  title: Ya instalado
+  text: Parece que ya tienes instalado Blessing Skin Server. Para reinstalar, por favor elimine primero las tablas en su base de datos, o use un nuevo prefijo de tabla.
+  button: Volver al inicio
+updates:
+  success:
+    title: Actualización finalizada
+wizard:
+  master:
+    title: Asistente de actualizacones - Blessing Skin Server
+  welcome:
+    title: Bienvenido
+    button: Siguiente
+    text: Bienvenido a Blessing Skin Server v:version!
+  database:
+    title: Base de datos
+    text: La base de datos se utiliza para almacenar datos de Blessing Skin.
+    type: Tipo de base de datos
+    host: Host de base de datos
+    port: Puerto de base de datos
+    username: Usuario de base de datos
+    password: Contraseña de base de datos
+    db: Nombre de base de datos
+    db-notice: Debería proporcionar la ruta al archivo SQLite; no hay necesidad de llenar otros espacios en blanco si lo usa.
+    prefix: Prefijo de tabla de base de datos (opcional)
+    prefix-notice: No necesita utilizar esta opción a menos que desee instalar múltiples instancias de Blessing Skin Server en una base de datos.
+  info:
+    title: Información necesaria
+    button: Ejecutar instalación
+    text: Para continuar con la instalación, por favor rellene este formulario con los detalles de la cuenta de administrador inicial. No te preocupes, siempre puedes cambiar estos ajustes más tarde.
+    admin-email: Correo del administrador
+    admin-notice: Esta es la cuenta de super administrador ÚNICA que puede DAR o CANCELAR los privilegios de administrador de otros usuarios.
+    nickname: Apodo
+    password: Contraseña
+    pwd-notice: 'Atención: Necesitará la contraseña para iniciar sesión. Por favor, guárdelo en un lugar seguro.'
+    confirm-pwd: Confirmar contraseña
+    site-name: Nombre del sitio
+    site-name-notice: Esto se mostrará en todas las páginas.
+  finish:
+    title: Instalación completada
+    text: Blessing Skin Server ha sido instalado. ¡Gracias y disfrútalo!

@@ -1,0 +1,11 @@
+<script src="{{ i18n }}" crossorigin="anonymous"></script>
+{{ include('assets.app', ignore_missing = true) }}
+{% for script in scripts %}
+  <script{% for attribute, value in script %} {{ attribute }}="{{ value }}"{% endfor %}></script>
+{% endfor %}
+{% if inline_js %}
+  <script>
+    {{ inline_js|striptags('<div><span><ul><li><p><a><img><i>')|raw }}
+  </script>
+{% endif %}
+{{ extra_foot|join('\n')|raw }}

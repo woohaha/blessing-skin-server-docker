@@ -1,0 +1,102 @@
+---
+sign-success: 签到成功，获得了 :score 积分
+announcement: 公告
+no-unread: 无未读通知
+verification:
+  disabled: 本站已关闭邮箱验证功能
+  frequent-mail: 你邮件发送得太频繁啦，过 60 秒后再点发送吧
+  verified: 你已经验证过邮箱了
+  success: 验证邮件已发送，请检查你的收件箱。
+  failed: 邮件发送失败，详细信息：:msg
+  mail:
+    title: 验证您在 :sitename 上的账户邮箱
+    message: 您收到这封邮件，是因为有人在 :sitename 注册时使用了本邮箱地址。
+    reset: '点击此链接验证您的邮箱：<a href=":url">:url</a>'
+    ignore: 如果您并没有访问过我们的网站，或没有进行上述操作，请忽略这封邮件。
+score-intro:
+  title: 积分是什么？
+  introduction: |
+    为了防止用户滥用材质上传功能导致占用过多的存储空间，本站已启用积分系统。
+    添加角色、上传材质，以及添加皮肤库里的材质到衣柜等操作均会消耗积分。
+    :return-score
+
+    本站用户初始积分为 :initial_score，每日签到可以随机获得 :score-from ~ :score-to 积分。
+  will-return-score: 删除已经添加的角色、已上传的材质、衣柜中的收藏物品时将会返还相应积分。
+  no-return-score: 删除已经添加的角色、已上传的材质、衣柜中的收藏物品时不会返还相应积分。
+  rates:
+    storage: ':score 积分 = 1 KB 存储空间'
+    player: ':score 积分 = 1 个角色'
+    closet: ':score 积分 = 1 个衣柜收藏'
+closet:
+  add:
+    success: 材质 :name 收藏成功
+    repeated: 你已经收藏过这个材质啦
+    not-found: 该材质不存在
+    lack-score: 收藏失败，积分不足
+  rename:
+    success: 衣柜物品成功重命名至 :name
+  remove:
+    success: 材质已从衣柜中移除
+    non-existent: 衣柜中不存在此材质
+player:
+  login-notice: 你可以使用你所拥有的角色名来登录皮肤站。
+  player-name-rule:
+    official: 角色名只能包含拉丁字母、数字以及下划线。
+    cjk: 角色名可使用拉丁字母、数字、下划线以及汉字（中日韩统一表意文字）。
+    utf8: 角色名必须是 UTF-8 字符串。
+    custom: 本站使用了自定义的角色名规则，详情请咨询站点管理员。
+  player-name-length: 角色名最少要求 :min 个字符，最多不超过 :max 个字符。
+  add:
+    repeated: 该角色名已被占用
+    lack-score: 添加角色失败，积分不足
+    success: 成功添加了角色 :name
+  delete:
+    success: 角色 :name 已被删除
+  rename:
+    repeated: 该角色名已被占用
+    success: 角色 :old 已更名为 :new
+  set:
+    success: 材质已成功应用至角色 :name
+  clear:
+    success: 角色 :name 的材质已被成功重置
+profile:
+  avatar:
+    title: 更改头像？
+    notice: 在衣柜中任意皮肤的右下角「<i class="fa fa-cog"></i>」图标处点击「设为头像」，即可自动截取该皮肤的头部作为头像。如果看不到这个图标，请尝试关闭你的广告过滤扩展。
+    wrong-type: 披风不能被设置为头像
+    success: 设置成功
+    reset: 重置头像
+  password:
+    title: 更改密码
+    old: 原密码
+    new: 新密码
+    confirm: 确认密码
+    button: 修改密码
+    wrong-password: 原密码错误
+    success: 密码修改成功，请重新登录
+  nickname:
+    title: 更改昵称
+    empty: 当前未设置昵称，
+    success: 昵称已成功设置为 :nickname
+  email:
+    title: 更改邮箱
+    new: 新邮箱
+    password: 当前密码
+    button: 修改邮箱
+    wrong-password: 密码错误
+    existed: 此邮箱已被占用
+    success: 邮箱修改成功，请重新登录
+  delete:
+    title: 删除账号
+    notice: 确定要删除你在 :site 上的账号吗？
+    admin: 拥有管理员权限的账号不能被删除
+    button: 删除我的账号
+    modal-title: 这是危险操作，输入密码以继续
+    modal-notice: |
+      此操作不可恢复！
+      你所上传至皮肤库的材质仍会被保留，但你的角色将被永久删除。
+      我们不提供任何备份，或者神奇的撤销按钮。
+      我们警告过你了，确定要这样做吗？
+    password: 当前密码
+    wrong-password: 密码错误
+    success: 账号已被成功删除

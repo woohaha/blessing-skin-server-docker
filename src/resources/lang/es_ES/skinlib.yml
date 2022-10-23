@@ -1,0 +1,30 @@
+---
+general:
+  upload-new-skin: Subir nuevo skin
+show:
+  title: Detalles de textura
+  deleted: La textura solicitada ya ha sido eliminada.
+  private: La textura solicitada es privada y sólo visible para el subidor y los administradores.
+upload:
+  title: Subir textura
+  name-rule: Menos de 32 caracteres y no debe contener ninguno especial.
+  name-rule-regexp: Las reglas de nombre personalizado se aplican como :regexp
+  private-score-notice: Se gastarán más puntuaciones por configurarlo como privado. Se le cobrará :score por cada almacenamiento KB.
+  invalid-size: Archivo :type no válido (ancho :width, altura :height)
+  invalid-hd-skin: Skin HD inválida (ancho y altura debe ser divisible por 32)
+  lack-score: No tienes suficiente puntuación para subir esta textura.
+  repeated: La textura ya está cargada por otra persona. Puede añadirla a su armario directamente.
+  success: Textura :name se ha subido exitosamente.
+delete:
+  success: La textura se eliminó con éxito.
+privacy:
+  success: La textura se estableció como :privacy con éxito.
+rename:
+  success: La textura fue renombrada a :name con éxito.
+model:
+  success: El modelo de la textura se cambió a :model con éxito.
+no-permission: No tienes permiso para moderar esta textura.
+non-existent: No existe la textura.
+report:
+  duplicate: Ya ha reportado esta textura. Los administradores la revisarán tan pronto sea posible. También puede rastrear el estado de su informe en el Centro de usuarios.
+  success: '¡Gracias por reportar! Los administradores lo revisarán tan pronto sea posible.'

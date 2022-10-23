@@ -1,0 +1,19 @@
+---
+http:
+  msg-403: No tiene permiso para accesar esta página.
+  msg-404: No hay nada.
+  msg-500: Por favor intente más tarde.
+  msg-503: La aplicación está ahora en modo de mantenimiento.
+  method-not-allowed: Método no permitido.
+  csrf-token-mismatch: El token no coincide, intente recargar la página.
+  ie: Tu navegador no es compatible. Por favor, cambie a otros navegadores modernos, como Firefox o Chrome.
+general:
+  title: Se produjo un error
+exception:
+  code: 'Código de error: :code'
+  detail: 'Detalles: :msg'
+  message: |
+    Ups, parece que algo salió mal. (habilita APP_DEBUG en .env para ver detalles)
+plugins:
+  duplicate: El plugin [:dir1] tiene una definición de nombre de plugin duplicado que es igual al plugin [:dir2]. Por favor, comprueba tu directorio de plugins, elimina uno de ellos o usa otra definición de nombre.
+  boot: Hay algo mal con el plugin ":plugin".

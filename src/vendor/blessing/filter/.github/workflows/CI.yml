@@ -1,0 +1,44 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  php:
+    name: PHP ${{ matrix.php }} Tests
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['7.3', '7.4']
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Setup PHP only
+      uses: shivammathur/setup-php@v2
+      if: matrix.php != '7.3'
+      with:
+        php-version: ${{ matrix.php }}
+        coverage: none
+        extensions: mbstring
+    - name: Setup PHP with Xdebug
+      uses: shivammathur/setup-php@v2
+      if: matrix.php == '7.3'
+      with:
+        php-version: ${{ matrix.php }}
+        coverage: xdebug
+        extensions: mbstring
+    - name: Install Composer dependencies
+      run: composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+    - name: Run tests only
+      if: matrix.php != '7.3'
+      run: ./vendor/bin/phpunit
+    - name: Run tests with coverage report
+      if: matrix.php == '7.3'
+      run: ./vendor/bin/phpunit --coverage-clover=coverage.xml
+    - name: Upload coverage report
+      uses: codecov/codecov-action@v1
+      if: matrix.php == '7.3' && success()
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        name: github-actions

@@ -1,0 +1,30 @@
+---
+general:
+  upload-new-skin: 上传新皮肤
+show:
+  title: 材质详情
+  deleted: 请求的材质文件已经被删除
+  private: 请求的材质已经设为私密，仅上传者和管理员可查看
+upload:
+  title: 上传材质
+  name-rule: 材质名称应该小于 32 个字节且不能包含奇怪的符号
+  name-rule-regexp: 本站已应用特殊的名称规则：:regexp
+  private-score-notice: 私密材质将会消耗更多的积分：每 KB 存储空间 :score 积分
+  invalid-size: 不是有效的 :type 文件（宽 :width，高 :height）
+  invalid-hd-skin: 不是有效的高清皮肤（宽和高不是 32 的整数倍）
+  lack-score: 积分不足
+  repeated: 已经有人上传过这个材质了，直接添加到衣柜使用吧~
+  success: 材质 :name 上传成功
+delete:
+  success: 材质已被成功删除
+privacy:
+  success: 材质已被设为 :privacy
+rename:
+  success: 材质名称已被成功设置为 :name
+model:
+  success: 材质的适用模型已被修改为 :model
+no-permission: 你没有权限修改此材质
+non-existent: 材质不存在
+report:
+  duplicate: 您已经举报过该材质了，请耐心等待管理员处理。您可以在用户中心查看举报的处理进度。
+  success: 举报已提交，请等待管理员处理

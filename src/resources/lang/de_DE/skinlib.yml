@@ -1,0 +1,30 @@
+---
+general:
+  upload-new-skin: Neuen Skin hochladen
+show:
+  title: Texturdetails
+  deleted: Diese Textur wurde bereits gelöscht.
+  private: Die angeforderte Textur ist privat und nur für den Uploader sichtbar.
+upload:
+  title: Textur hochladen
+  name-rule: Weniger als 32 Zeichen und darf keine Sonderzeichen enthalten.
+  name-rule-regexp: Benutzerdefinierte Namensregeln werden als :regexp angewendet
+  private-score-notice: Es kostet mehr Punkte, dies als privat zu setzen. Es werden dir :score Punkte pro KB-Speicher berechnet.
+  invalid-size: Ungültige :type Datei (Breite :width, Höhe :height)
+  invalid-hd-skin: Der HD-Skin hat die falsche Größe (Breite und Höhe müssen durch 32 teilbar sein)
+  lack-score: Du hast nicht genug Punkte, um diese Textur hochzuladen.
+  repeated: Die Textur wurde bereits von jemand anderem hochgeladen. Du kannst sie direkt zu deinem Kleiderschrank hinzufügen.
+  success: Die Texture :name wurde erfolgreich hochgeladen.
+delete:
+  success: Die Textur wurde gelöscht.
+privacy:
+  success: Die Textur ist auf :privacy gesetzt.
+rename:
+  success: Die Textur wurde erfolgreich in :name umbenannt.
+model:
+  success: Das Modell der Textur wurde erfolgreich in :model geändert.
+no-permission: Sie haben keine Zugriffsberechtigung für diese Textur.
+non-existent: Textur nicht gefunden.
+report:
+  duplicate: Sie haben diese Textur bereits gemeldet. Die Administratoren werden sie so bald wie möglich überprüfen. Sie können auch den Status Ihres Berichts im User Center verfolgen.
+  success: Vielen Dank für Ihre Meldung! Die Administratoren werden sie so bald wie möglich überprüfen.

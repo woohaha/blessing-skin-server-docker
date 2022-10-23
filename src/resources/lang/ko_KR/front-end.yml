@@ -1,0 +1,273 @@
+---
+auth:
+  login: 로그인
+  loggingIn: 로그인 중
+  tooManyFails:
+    captcha: 시도 회수 초과! CAPTCHA인증를 해주세요.
+    recaptcha: 시도 회수 초과! reCAPTCHA인증를 해주세요.
+  emptyEmail: 이메일주소를 입력해주세요.
+  invalidConfirmPwd: 비밀번호가 일치하지 않음.
+  emptyNickname: 닉네임을 입력해 주세요.
+  register: 회원가입
+  registering: 등록하는 중...
+  send: 전송
+  sending: 전송 중...
+  reset: 재설정
+  resetting: 재설정 중...
+  nickname: 닉네임
+  player-name: Minecraft 사용자명
+  email: 이메일
+  identification: 이메일 또는 플레이어명
+  password: 비밀번호
+  captcha: CAPTCHA 보안 문자
+  change-captcha: Click to change CAPTCHA image.
+  login-link: 이미 등록했다면 나를 클릭해서 로그인하세요.
+  forgot-link: 비밀번호를 잊으셨나요?
+  keep: 로그인 상태 기억하기
+  repeat-pwd: 비밀번호를 재입력하세요
+  nickname-intro: 특수문자 외의 문자 사용가능
+  player-name-intro: 인게임 닉네임은 나중에도 변경 가능 합니다
+  forgot:
+    login-link: 오잉? 기억난 네요
+skinlib:
+  private: 비공개
+  anonymous: 우선 로그인하십시오.
+  reset: 필터 초기화
+  addToCloset: 스킨 옷장에 추가
+  removeFromCloset: 스킨 옷장에 삭제
+  setItemName: Set a name for this texture
+  applyNotice: You can apply it to player at your closet
+  emptyItemName: Empty texture name.
+  setNewTextureName: 'Please enter the new texture name:'
+  emptyNewTextureName: Empty new texture name.
+  seeMyUpload: 나의 업로드
+  apply: 적용하기
+  filter:
+    skin: (Any Model)
+    steve: (Steve)
+    alex: (Alex)
+    cape: (Cape)
+    uploader: '사용자 (UID = :uid) 가 업로드함'
+    allUsers: 모든 사용자
+  sort:
+    title: 정렬
+    time: 최신 항목
+    likes: 좋아요순
+  emptyTextureName: Empty texture name.
+  emptyUploadFile: 아직 파일을 업로드하지 않았습니다!
+  fileExtError: 'PNG 형식의 파일이어야 합니다.'
+  uploading: 업로드 중...
+  setAsPrivate: Set as Private
+  setAsPublic: Set as Public
+  setPublicNotice: Sure to set this as public texture?
+  setPrivateNotice: Sure to set this as private texture?
+  deleteNotice: Are you sure to delete this texture?
+  setNewTextureModel: "Please select a new texture model:"
+  upload:
+    texture-name: Texture Name
+    texture-type: Texture Type
+    select-file: Select File
+    privacy-notice: Prevent it from being visible at skin library.
+    set-as-private: Make it Private
+    button: Upload
+    cost: It costs you about :score score.
+    award: You'll be awarded :score score(s) by uploading public texture.
+  show:
+    anonymous: You must login to use closets
+    likes: People who like this
+    detail: Details
+    name: Texture Name
+    edit: Edit
+    model: Applicable Model
+    size: File Size
+    uploader: Uploader
+    upload-at: Upload At
+    download: Download
+    delete-texture: Delete Texture
+    manage-notice: The texture which was deleted or setted to private will be removed from the closet of everyone who had favorited it.
+  report:
+    title: Report
+    reason: Tell us reason please.
+    positive: To encourage positive contributions to the skinlib, we will reward who reported inappropriate content with :score scores. However, if any malicious reporting behaviors were found, all scores rewarded will be taken back.
+    negative: To mitigate the impact of malicious reports, we will require :score scores for submitting a texture report. Don't worry. The suspended scores and additional reward will be sent to your account after your report reviewed by administrators.
+user:
+  signRemainingTime: 'Available after :time :unit'
+  timeUnitHour: h
+  timeUnitMin: min
+  emptyClosetMsg: >-
+    <p>Nothing in your closet...</p><p>Why not explore the <a href=":url">Skin Library</a> for a while?</p>
+  renameItem: Rename item
+  removeItem: Remove from closet
+  setAsAvatar: Set as avatar
+  viewInSkinlib: View in skin library
+  switch2dPreview: Switch to 2D Preview
+  switch3dPreview: Switch to 3D Preview
+  removeFromClosetNotice: Sure to remove this texture from your closet?
+  emptySelectedTexture: No texture is selected.
+  renameClosetItem: 'Set a new name for this item:'
+  changePlayerName: 'Please enter the player name:'
+  emptyPlayerName: Empty player name.
+  deletePlayer: Sure to delete this player?
+  deletePlayerNotice: It's permanent. No backups.
+  chooseClearTexture: Choose texture types you want to clear
+  noClearChoice: You haven't choose any types
+  setAvatar: Sure to set this as your avatar?
+  setAvatarNotice: The head segment of skin will bu used.
+  resetAvatarConfirm: Are you sure to reset your avatar?
+  typeToSearch: Type to search
+  useAs: Apply...
+  resetSelected: Clear selected
+  closet:
+    upload: Upload Texture
+    use-as:
+      title: Which player should be applied to?
+      empty: It seems that you own no player...
+  used:
+    title: Resources Used
+    players: Registered players
+    storage: Storage used
+  cur-score: Current Score
+  score-notice: Click the score to show introduction.
+  sign: Sign
+  player:
+    operation: Operations
+    edit-pname: Edit Name
+    delete-texture: Clear Textures
+    delete-player: Delete
+    add-player: Add new player
+    texture-empty: Nothing
+  verification:
+    title: Verify Your Account
+    message: You must verify your email address before using the skin hosting service. Haven't received the email?
+    resend: Click here to send again.
+    sending: Sending...
+  oauth:
+    id: Client ID
+    name: App Name
+    secret: Client Secret
+    redirect: Callback URL
+    modifyName: Modify app name.
+    modifyUrl: Modify callback URL.
+    create: Create New App
+    confirmRemove: Are you sure to delete this app? You won't be able to undo this.
+admin:
+  operationsTitle: Operations
+  permission: Permission
+  deleteUser: Delete
+  changeEmail: Edit Email
+  newUserEmail: 'Please enter the new email:'
+  verification: Email Verification
+  toggleVerification: Toggle Verification Status
+  changeNickName: Edit Nickname
+  newUserNickname: 'Please enter the new nickname:'
+  changePassword: Edit Password
+  newUserPassword: 'Please enter the new password:'
+  changeScore: Edit Score
+  newScore: 'Please enter the new score:'
+  changePermission: Change permission
+  newPermission: 'Please select new permission:'
+  deleteUserNotice: Are you sure to delete this user? It' permanent.
+  banned: Banned
+  normal: Normal
+  admin: Admin
+  superAdmin: Super Admin
+  unverified: Unverified
+  verified: Verified
+  pidNotice: >-
+    Please enter the tid of texture. Inputing 0 can clear texture of this player.
+  changeTexture: Change Textures
+  changePlayerName: Change Player Name
+  changeOwner: Change Owner
+  textureType: Texture Type
+  deletePlayer: Delete
+  changePlayerOwner: 'Please enter the id of user which this player should be transferred to:'
+  deletePlayerNotice: Are you sure to delete this player? It' permanent.
+  changePlayerNameNotice: 'Please input new player name:'
+  emptyPlayerName: Player name cannot be empty.
+  configurePlugin: Configure
+  deletePlugin: Delete
+  noDependencies: No Dependencies
+  pluginTitle: Plugin
+  pluginAuthor: Author
+  pluginVersion: Version
+  pluginReadme: Read Me
+  pluginDescription: Description
+  pluginDependencies: Dependencies
+  installPlugin: Install
+  pluginInstalling: Installing...
+  updatePlugin: Update
+  pluginUpdating: Updating...
+  confirmUpdate: Are you sure to update ":plugin" from :old to :new?
+  enablePlugin: Enable
+  disablePlugin: Disable
+  confirmDeletion: Are you sure to delete this plugin?
+  uploadArchive: Upload Archive
+  uploadArchiveNotice: Install a plugin by uploading a Zip archive.
+  downloadRemote: Download From Remote
+  downloadRemoteNotice: Install a plugin by downloading a Zip archive from remote URL.
+  updateButton: Update Now
+  downloading: Downloading...
+  i18n:
+    group: Group
+    key: Key
+    text: Text
+    empty: (Empty)
+    modify: Modify
+    delete: Delete
+    updating: 'Please type new text:'
+    confirmDelete: Are you sure? This is irreversible.
+report:
+  tid: Texture ID
+  reporter: Reporter
+  reason: Reason
+  status-title: Status
+  status:
+    - Pending
+    - Resolved
+    - Rejected
+  time: Report Time
+  delete: Delete
+  ban: Ban
+  reject: Reject
+general:
+  skin: Skin
+  cape: Cape
+  fatalError: Fatal Error
+  confirmLogout: Sure to log out?
+  confirm: OK
+  cancel: Cancel
+  submit: Submit
+  close: Close
+  more: More
+  tip: Tip
+  noResult: No result.
+  texturePreview: Texture Preview
+  walk: Walk
+  run: Run
+  rotation: Rotation
+  pause: Pause
+  reset: Reset
+  skinlib: Skin Library
+  wait: Please wait...
+  csrf: This page is out-dated. Please refresh it.
+  user:
+    email: Email
+    nickname: Nick Name
+    score: Score
+    register-at: Registered At
+  player:
+    owner: Owner
+    player-name: Player Name
+    previews: Texture Previews
+    last-modified: Last Modified
+colors:
+  black: Black
+  white: White
+  gray: Gray
+  prev: Previous Background
+  next: Next Background
+vendor:
+  datatable:
+    search: Search
+    prev: Prev
+    next: Next

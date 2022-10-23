@@ -1,0 +1,180 @@
+---
+option-saved: Opción guardada.
+homepage:
+  title: Inicio
+  home_pic_url:
+    title: URL de la imagen en la página de inicio
+    hint: Ruta relativa a la página de inicio o URL completa, dejar en blanco para usar la imagen por defecto.
+  favicon_url:
+    title: Icono del sitio web
+    hint: Ruta relativa a public/ o URL completa.
+    description: La imagen dada debe tener el mismo ancho y altura (dejar en blanco para usar el icono por defecto).
+  transparent_navbar:
+    title: Barra de navegación transparente
+    label: Esto activará la barra de navegación transparente de la página de inicio, pero se convertirá en normal si la página se desplaza hacia abajo.
+  hide_intro:
+    title: Ocultar introducción en la parte inferior
+    label: La barra de desplazamiento se desactivará si esta opción está activada, desde versión 2.x.
+  fixed_bg:
+    title: Fondo fijo
+    label: Esta opción hará que el fondo sea fijo, no desplazado con la barra de desplazamiento.
+  copyright_prefer:
+    title: Copyright del programa
+    description: "Puede especificar un estilo diferente de copyright del programa para cada idioma. Para editar el correspondiente estilo de copyright de un idioma específico, por favor cambie a ese idioma y someta su edición. <br><b>Advertencia:</b> Cualquier modificación mala aplicada al copyright del programa de pie de página (incluyendo eliminación, modificando el autor, cambiando el destino del enlace) sin permiso es <b>FORBIDO</b>. El autor se reserva el derecho a asumir las responsabilidades pertinentes."
+  copyright_text:
+    title: Texto personalizado de copyright
+    description: Los marcadores de posición están disponibles en el texto de copyright personalizado. ej. <code>{site_name}</code> & <code>{site_url}</code>. También puedes especificar un pie de página diferente para cada idioma. Para editar el pie de página de un idioma específico, por favor cambie a ese idioma y someta su edición.
+customJsCss:
+  title: CSS/JavaScript personalizado
+  message: |
+    El contenido se adjuntará a etiquetas &lt;style&gt; y &lt;script&gt;.<br>
+    - Aquí hay algunos ejemplos útiles: <a href="https://blessing.netlify.com/css-js.html">Ejemplos de JavaScript y CSS personalizado</a>
+  custom_css: CSS
+  custom_js: JavaScript
+rate:
+  title: Puntuaciones
+  score_per_storage:
+    title: Almacenamiento
+    addon: puntuaciones = 1 KB
+  private_score_per_storage:
+    title: Almacenamiento privado
+    addon: puntuaciones = 1 KB
+    hint: Subir texturas privadas costará más puntuaciones.
+  score_per_closet_item:
+    title: Favoritos
+    addon: puntuación = 1 elemento de armario
+  return_score:
+    title: Puntuación de retorno
+    label: Devuelve las puntuaciones al usuario después de eliminar jugadores/texturas/elementos de armario.
+  score_per_player:
+    title: Jugadores
+    addon: puntuaciones = 1 jugador
+  user_initial_score: Puntuación inicial del usuario
+report:
+  title: Reportando texturas
+  reporter_score_modification:
+    title: Puntuaciones para enviar un informe
+    description: Establece un valor entero positivo para recompensar al usuario que envía nuevos informes. Establecer a un valor negativo requerirá puntuaciones para enviar informes, y las puntuaciones suspendidas estarán disponibles si el informe del usuario fue resuelto. Establecer a 0 para desactivar.
+  reporter_reward_score:
+    title: Recompensa al reportador con puntuaciones si el informe se resuelve
+sign:
+  title: Firmando
+  sign_score:
+    title: Puntuación concedida
+    addon1: puntuaciones ~
+    addon2: puntuaciones
+  sign_gap_time:
+    title: Tiempo de hueco
+    addon: horas
+  sign_after_zero:
+    title: Hora
+    label: Los usuarios pueden iniciar sesión después de 0 todos los días.
+    hint: La opción anterior será ignorada si esto está marcado.
+sharing:
+  title: Concesionando el compartir
+  score_award_per_texture:
+    title: El cargador será recompensado por cada textura cargada con
+  take_back_scores_after_deletion:
+    title: Retornación de puntuaciones
+    label: Devolver puntuaciones si la configuración del cargador es privada o si se elimina la textura.
+  score_award_per_like:
+    title: Cada vez que la textura es recolectada, el cargador será recompensado con
+general:
+  title: Opciones generales
+  site_name: Nombre del sitio
+  site_description:
+    title: Descripción del sitio
+    description: También puede especificar un nombre y una descripción del sitio para cada idioma. Para editar el nombre o la descripción del sitio web de un idioma específico, por favor cambie a ese idioma y someta su edición.
+  site_url:
+    title: URL del sitio
+    hint: Comienza con http(s)://, nunca termina con una barra.
+  register_with_player_name:
+    title: Registrar con el nombre del jugador
+    label: Requerir el nombre del jugador de Minecraft cuando el usuario se registre
+  require_verification:
+    title: Verificación de cuenta
+    label: Los usuarios primero deben verificar su dirección de correo electrónico.
+  regs_per_ip: Cuentas máximas de un IP
+  max_upload_file_size:
+    title: Tamaño máximo de subida
+    hint: "Límite especificado en php.ini: :size"
+  player_name_rule:
+    title: Regla de nombre de jugador
+    official: Letras, números y guiones bajos (regla oficial de Mojang)
+    cjk: Permitir Ideografías unificadas CJK
+    utf8: Allow all valid UTF-8 characters (excluding whitespaces)
+    custom: Usar reglas personalizadas (expresión regular)
+  custom_player_name_regexp:
+    title: Reglas de nombre de jugador personalizadas
+    hint: Sólo tiene efecto cuando la opción anterior se establece en 'personalizar'. Dejar en blanco para permitir cualquier carácter.
+    placeholder: Expresiones regulares
+  player_name_length:
+    title: Longitud del nombre de jugador
+    suffix: caracteres
+  auto_del_invalid_texture:
+    title: Texturas no válidas
+    label: Borrar texturas no válidas automáticamente.
+    hint: Eliminar registros de texturas cuyos archivos ya no existen en skinlib.
+  allow_downloading_texture:
+    title: Descargando texturas
+    label: Permite a los usuarios descargar directamente el archivo fuente de un elemento skinlib.
+  status_code_for_private:
+    title: Código HTTP para rechazar el acceso a texturas privadas
+  texture_name_regexp:
+    title: Reglas de nombre de textura
+    hint: RegExp para validar el nombre de las texturas subidas. Dejar en blanco para permitir cualquier carácter excepto una comilla individual, doble y barra invertida.
+    placeholder: Expresiones regulares
+  content_policy:
+    title: Política de contenido
+    description: Muestra la política de contenido en la página de subida de texturas, apoyando a Markdown. Para editar la correspondiente política de contenido de un idioma específico, por favor cambie a ese idioma y someta su edición.
+announ:
+  title: Anuncio
+  announcement:
+    description: El estilo con Markdown es compatible. También puedes especificar un anuncio diferente para cada idioma. Para editar el anuncio correspondiente de un idioma específico, por favor cambie a ese idioma y someta su edición.
+meta:
+  title: Etiquetas SEO <meta>
+  meta_keywords:
+    title: Palabras clave
+    hint: Dividir con comas.
+  meta_description:
+    title: Descripción
+    hint: Descripción definida en "Opciones generales" se utilizará si la deja vacía.
+  meta_extras:
+    title: Otras etiquetas personalizadas <meta>
+recaptcha:
+  recaptcha_invisible:
+    title: Invisible
+    label: Activar modo invisible
+res-warning: Esta página es SOLO para usuarios avanzados. Si no estás familiarizado con estos, ¡por favor no las modifiques!
+resources:
+  title: Archivos de recursos
+  hint: Por favor, compruebe estas opciones si ha habilitado CDN para su sitio.
+  force_ssl:
+    title: Forzar SSL
+    label: Utilizar el protocolo HTTPS para cargar todos los assets del front-end.
+    hint: Por favor, compruebe si SSL está realmente disponible antes de activar.
+  auto_detect_asset_url:
+    title: URL de assets
+    label: Determinar la url de assets automáticamente.
+    description: Por favor, deshabilite esto si las URL de los assets se generan incorrectamente bajo un CDN. Se utilizará la url del sitio si esto no está habilitado.
+  cache_expire_time:
+    title: Tiempo de expiración caché
+    hint: En segundos, 86400 = un día, 31536000 = un año.
+  cdn_address:
+    title: CDN de assets de front-end
+    hint: Los archivos front-end no se cargarán si la URL no está disponible.
+    description: |
+      La URL del CDN debe referirse a una réplica del directorio <code>/public</code>,
+      todos los archivos de ese directorio se cargarán como CDN.<br>
+      <b>¿Cómo verificar?</b> Verifica si <code>{Your CDN URL}/app/manifest.json</code> puede ser accedido.
+cache:
+  title: Configuración de caché
+  clear: Limpiar caché
+  cleared: La caché ha sido borrada.
+  driver: El controlador de caché actual es :driver.
+  enable_avatar_cache:
+    title: Avatar
+    label: Habilitar avatar de caché
+  enable_preview_cache:
+    title: Preestreno de textura
+    label: Habilitar el preestreno de textura en caché

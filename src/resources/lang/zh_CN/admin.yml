@@ -1,0 +1,138 @@
+---
+index:
+  total-users: 注册用户
+  total-players: 角色总数
+  total-textures: 上传材质总数
+  disk-usage: 占用空间大小
+  overview: 概览
+  texture-uploads: 材质上传
+  user-registration: 用户注册
+notifications:
+  send:
+    title: 发送通知
+    success: 发送成功
+  receiver:
+    title: 接收者
+    all: 所有用户
+    normal: 普通用户
+    uid: 指定 UID
+    email: 指定邮箱
+  title: 标题
+  content: 内容（可使用 Markdown）
+users:
+  operations:
+    non-existent: 用户不存在
+    no-permission: 你无权操作此用户
+    email:
+      success: 邮箱修改成功
+    verification:
+      success: 用户的邮箱验证状态已修改
+    nickname:
+      success: 昵称已成功设置为 :new
+    password:
+      success: 密码修改成功
+    score:
+      success: 积分修改成功
+    permission: 权限已更改
+    delete:
+      success: 账号已被成功删除
+players:
+  no-permission: 你无权操作此角色
+  textures:
+    non-existent: 材质 tid.:tid 不存在
+    success: 角色 :player 的材质修改成功
+  name:
+    success: 角色名成功更改为 :player
+  owner:
+    success: 角色 :player 已被转给用户 :user 。
+  delete:
+    success: 角色已被成功删除
+customize:
+  change-color:
+    title: 更改配色
+  colors:
+    navbar: 顶部导航栏
+    sidebar:
+      dark: 侧栏（暗）
+      light: 侧栏（亮）
+i18n:
+  add: 添加新条目
+  added: 条目增加成功
+  updated: 条目更新成功
+  deleted: 条目已删除
+  group: 分组
+  key: 键
+  text: 文本
+  tip: 如何使用本页面的功能？
+status:
+  info: 信息
+  health: 健康
+  bs:
+    name: Blessing Skin
+    version: 版本
+    env: 应用环境
+    debug: 是否处于调试状态
+    commit: 提交
+    laravel: Laravel 版本
+  server:
+    name: 服务器
+    php: PHP 版本
+    web: Web 服务软件
+    os: 操作系统
+  db:
+    name: 数据库
+    type: 服务器类型
+    host: 主机
+    port: 端口
+    username: 用户名
+    database: 数据库
+    prefix: 数据表前缀
+  plugins: 已开启的插件 (:amount)
+plugins:
+  readme: 说明
+  operations:
+    title: 操作
+    enabled: ':plugin 已启用'
+    unsatisfied:
+      notice: 无法启用此插件，因为其仍有冲突或未满足的依赖关系。请检查以下插件的版本，更新或安装它们并禁用存在冲突的插件：
+      disabled: '「:name」插件未启用'
+      version: '「:title」的版本不符合要求 ":constraint"'
+      conflict: '「:title」插件与此插件不能同时运行'
+    disabled: ':plugin 已禁用'
+    deleted: 插件已被成功删除
+    no-config-notice: 插件未安装或未提供配置页面
+    no-readme-notice: 这个插件没有说明文件。
+    not-found: 插件不存在
+  market:
+    unresolved: 无法下载此插件，因为其仍有冲突或未满足的依赖关系。请检查以下插件的版本，更新或安装它们并禁用存在冲突的插件：
+    connection-error: 无法连接至插件市场源，错误信息：:error
+    non-existent: 插件 :plugin 不存在
+    install-success: 插件安装成功
+update:
+  complete: 更新完成
+  info:
+    title: 更新信息
+    up-to-date: 已更新至最新版本。
+    available: 有更新可用。
+    versions:
+      latest: "最新版本："
+      current: "当前版本："
+    check-github: 查看 GitHub Releases
+    button: 马上升级
+  cautions:
+    title: 注意事项
+    link: 点击了解详情
+    text: |
+      请根据你的主机所在位置（国内/国外）选择更新源。
+      如错选至相对于你的主机速度较慢的源，可能会造成检查与下载更新页面长时间无响应。
+      如何更换更新源？
+  errors:
+    connection: "无法访问当前更新源。详细信息：:error"
+    spec: 不支持当前的更新源。
+    php: PHP 版本过低，至少需要 :version。
+download:
+  errors:
+    download: '下载失败。原因：:error'
+    shasum: 文件校验失败，请重新下载。
+    unzip: 解压失败。
+invalid-action: 无效的操作名

@@ -1,0 +1,138 @@
+---
+index:
+  total-users: 登録ユーザー数
+  total-players: プレイヤー数
+  total-textures: 登録したスキン数
+  disk-usage: ディスク使用量
+  overview: 概要
+  texture-uploads: スキンのアップロード
+  user-registration: ユーザー登録
+notifications:
+  send:
+    title: 通知を送信
+    success: 送信に成功しました.
+  receiver:
+    title: 受信者
+    all: 全てのユーザ
+    normal: 一般ユーザー
+    uid: UIDを指定
+    email: メールアドレスを指定
+  title: トップ
+  content: コンテンツ (Markdown サポート されて いませ)
+users:
+  operations:
+    non-existent: ユーザーが存在しません。
+    no-permission: このユーザーを操作する権限がありません。
+    email:
+      success: メールの変更が済みました。
+    verification:
+      success: アカウントの確認ステータスが正常に切り替わりました。
+    nickname:
+      success: ニックネームの変更が済みました。
+    password:
+      success: パスワードの変更が済みました。
+    score:
+      success: スコアの変更が済みました。
+    permission: アクセス許可が更新されました。
+    delete:
+      success: The account has been deleted successfully.
+players:
+  no-permission: You have no permission to operate this player.
+  textures:
+    non-existent: No such texture tid.:tid
+    success: The textures of :player has been updated.
+  name:
+    success: Player name has been updated to :player
+  owner:
+    success: The player :player was transferred to user :user.
+  delete:
+    success: The player has been deleted successfully.
+customize:
+  change-color:
+    title: Change Theme Color
+  colors:
+    navbar: Top Navigation Bar
+    sidebar:
+      dark: Sidebar (Dark)
+      light: Sidebar (Light)
+i18n:
+  add: Add New Language Line
+  added: Language line added.
+  updated: Language line updated.
+  deleted: Language line deleted.
+  group: グループ
+  key: 鍵
+  text: テキスト
+  tip: How can I use this page?
+status:
+  info: Information
+  health: Health
+  bs:
+    name: Blessing Skin
+    version: バージョン
+    env: Application Environment
+    debug: Debugging or Not?
+    commit: Commit
+    laravel: Laravel Version
+  server:
+    name: サーバー
+    php: PHP バージョン
+    web: Web サーバーソフトウェア
+    os: オペレーティングシステム
+  db:
+    name: データベース
+    type: サーバー
+    host: ホスト
+    port: ポート
+    username: Username
+    database: Database
+    prefix: Table Prefix
+  plugins: Enabled Plugins (:amount)
+plugins:
+  readme: Read Me
+  operations:
+    title: Operations
+    enabled: ':plugin has been enabled.'
+    unsatisfied:
+      notice: There are conflicts or unsatisfied dependencies in the plugin, therefore we can't enable it. Please install or update the plugins listed below, and disable those have conflicts.
+      disabled: 'The ":name" plugin is not enabled.'
+      version: 'The version of ":title" does not satisfies the constraint ":constraint".'
+      conflict: 'The ":title" plugin cannot run with this plugin at the same time.'
+    disabled: ':plugin has been disabled.'
+    deleted: The plugin was deleted successfully.
+    no-config-notice: The plugin is not installed or doesn't provide a configuration page.
+    no-readme-notice: The plugin doesn't contain a readme file.
+    not-found: No such plugin.
+  market:
+    unresolved: There are conflicts or unsatisfied dependencies in the plugin, therefore we can't download it. Please install or update the plugins listed below, and disable those have conflicts.
+    connection-error: Unable to connect to the plugins registry. :error
+    non-existent: The plugin :plugin does not exist.
+    install-success: Plugin was installed.
+update:
+  complete: Update completed
+  info:
+    title: Update Information
+    up-to-date: Already up-to-date.
+    available: New version available.
+    versions:
+      latest: "Latest Version:"
+      current: "Current Version:"
+    check-github: Check GitHub Releases
+    button: Update Now
+  cautions:
+    title: Cautions
+    link: check out this.
+    text: |
+      Please choose update source according to your host's network environment.
+      Low-speed connection between update source and your host will cause long-time loading at checking and downloading page.
+      To change the default update source,
+  errors:
+    connection: "Unable to access to current update source. Details: :error"
+    spec: Current update source is not supported.
+    php: Your PHP version is too low to update. Requires :version or later.
+download:
+  errors:
+    download: 'Failed to download. Error: :error'
+    shasum: File validation failed. Please download again.
+    unzip: Failed to unpack files.
+invalid-action: Invalid action

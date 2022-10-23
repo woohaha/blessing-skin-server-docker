@@ -1,0 +1,77 @@
+{% extends 'admin.base' %}
+
+{% block title %}{{ trans('general.customize') }}{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-3">
+      <form class="card box-primary" method="post" action="{{ url('/admin/customize?action=color') }}">
+        {{ csrf_field() }}
+        <div class="card-header">
+          <h3 class="card-title">
+            {{ trans('admin.customize.change-color.title') }}
+          </h3>
+        </div>
+        <div class="card-body">
+          <div id="navbar-color-picker">
+            <p>{{ trans('admin.customize.colors.navbar') }}</p>
+            <div>
+              {% for color in colors.navbar %}
+                <label>
+                  <input type="radio" class="d-none" name="navbar" value="{{ color }}">
+                  <div class="btn-color bg-{{ color }} display-inline-block
+                    rounded-pill mr-2 mb-1 elevation-2"
+                  ></div>
+                </label>
+              {% endfor %}
+            </div>
+          </div>
+          <div id="sidebar-dark-picker">
+            <p>{{ trans('admin.customize.colors.sidebar.dark') }}</p>
+            <div>
+              {% for color in colors.sidebar %}
+                <label>
+                  <input type="radio" class="d-none" name="sidebar" value="dark-{{ color }}">
+                  <div class="btn-color bg-{{ color }} display-inline-block
+                    rounded-pill mr-2 mb-1 elevation-2"
+                  ></div>
+                </label>
+              {% endfor %}
+            </div>
+          </div>
+          <div id="sidebar-light-picker">
+            <p>{{ trans('admin.customize.colors.sidebar.light') }}</p>
+            <div>
+              {% for color in colors.sidebar %}
+                <label>
+                  <input type="radio" class="d-none" name="sidebar" value="light-{{ color }}">
+                  <div class="btn-color bg-{{ color }} display-inline-block
+                    rounded-pill mr-2 mb-1 elevation-2"
+                  ></div>
+                </label>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <input
+            type="submit"
+            class="btn btn-primary"
+            value="{{ trans('general.submit') }}"
+            name="submit_color"
+          >
+        </div>
+      </form>
+    </div>
+    <div class="col-md-9">
+      {{ forms.homepage|raw }}
+      {{ forms.custom_js_css|raw }}
+    </div>
+  </div>
+{% endblock %}
+
+{% block before_foot %}
+  <script id="blessing-extra" type="application/json">
+    {{ extra|json_encode|raw }}
+  </script>
+{% endblock %}

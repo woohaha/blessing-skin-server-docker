@@ -1,0 +1,19 @@
+<div class="user-panel mt-3 mb-3 {{ badges|length > 0 ? 'pb-2' }}">
+  <div class="d-flex">
+    <div class="image">
+      <picture>
+        <source srcset="{{ avatar }}" type="image/webp">
+        <img src="{{ avatar_png }}" class="bs-avatar" alt="User Image">
+      </picture>
+    </div>
+    <div class="info">
+      <a class="d-block" data-mark="nickname">{{ user.nickname ?? user.email }}</a>
+    </div>
+  </div>
+
+  <div class="mt-3 ml-2 mr-2 d-flex flex-wrap">
+    {% for badge in badges %}
+      <span class="badge bg-{{ badge.color }} mb-1 mr-2">{{ badge.text }}</span>
+    {% endfor %}
+  </div>
+</div>

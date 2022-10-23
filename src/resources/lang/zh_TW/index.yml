@@ -1,0 +1,17 @@
+---
+features:
+  title: 特性
+  first:
+    icon: fa-users
+    name: 多角色
+    desc: 您可以在一個已註冊賬戶上增加多個角色
+  second:
+    icon: fa-share-alt
+    name: 分享
+    desc: 探索皮膚庫，收藏並與您的朋友分享。
+  third:
+    icon: fa-cloud
+    name: 免費
+    desc: 永久免費。沒有廣告。絕不收費。
+introduction: ':sitename 提供了一個上傳 Minecraft 皮膚的平台。藉由皮膚mod（諸如 CustomSkinLoader），您可以在 Minecraft 中選取皮膚並運用於您的角色，並使其對其他玩家可見。'
+start: 加入我們

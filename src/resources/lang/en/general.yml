@@ -1,0 +1,66 @@
+index: Homepage
+skinlib: Skin Library
+user-center: User Center
+logout: Log Out
+login: Log In
+register: Register Now
+profile: User Profile
+admin-panel: Admin Panel
+explore: Explore
+manage: Manage
+anonymous: Guest
+back: Back
+dashboard: Dashboard
+my-closet: Closet
+my-reports: Reports
+developer: Advanced
+oauth-manage: OAuth2 Apps
+player-manage: Players
+user-manage: Users
+report-manage: Reports
+plugin-manage: Plugins
+plugin-market: Plugin Market
+plugin-configs: Plugin Configs
+customize: Customize
+i18n: Internationalization
+options: Options
+score-options: Score Options
+res-options: Resource Options
+status: Status
+check-update: Check Update
+download-update: Download Updates
+close: Close
+skin: Skin
+cape: Cape
+
+submit: Submit
+cancel: Cancel
+yes: Yes
+no: No
+op-success: Operated successfully.
+unknown: Unknown
+
+notice: Notice
+
+illegal-parameters: Illegal parameters.
+
+private: Private
+public: Public
+
+unexistent-user: No such user.
+player-banned: The owner of this player has been banned.
+
+texture-deleted: The requested texture has been deleted.
+
+user:
+  email: Email
+  nickname: Nickname
+  password: Password
+  score: Score
+  register-at: Registered At
+
+player:
+  owner: Owner
+  player-name: Player Name
+  previews: Texture Previews
+  last-modified: Last Modified

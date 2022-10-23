@@ -1,0 +1,85 @@
+---
+login:
+  title: 登入
+  message: 登入以管理您的皮膚和角色
+  success: 登入成功。
+check:
+  anonymous: 非法訪問。請先登入。
+  verified: 要訪問此頁面, 請先驗證您的電子郵件地址。
+  admin: 只有管理員可訪問此頁。
+  banned: 您在此站点被查禁。請與管理員聯繫。
+register:
+  title: 註冊
+  message: 歡迎来到 :sitename!
+  success: 您的賬戶已注冊. 跳轉中...
+  max: 您無法注冊 :regs 個以上賬戶.
+forgot:
+  title: 我忘記密碼了
+  message: 我們將向您發送一封驗證郵件
+  disabled: 重置密碼暫不可用.
+  frequent-mail: 您點擊 "發送" 按鈕的速度過快. 請等幾分鐘。
+  unregistered: 该電郵地址沒有註冊。
+  success: 郵件已發送, 請檢查您的收件匣. 連結將在1小時內過期.
+  failed: 未能送達驗證郵件. :msg
+  ignore: 如果您並沒有訪問過我們的站點，或沒有進行上述操作，請忽略這封郵件。您無需進行退訂或者進行其他進一步的操作。
+  reset: 重設您的密碼 
+  notice: 本郵件由系統自動發送，就算你回復了我們也不會回復你
+  mail:
+    title: 重設您在 :sitename 的密碼
+    message: 您之所以收到此電子郵件, 是因為我們在 :sitename 上收到了關於您賬戶的重設密碼請求.
+    reset: '要重置密碼, 請訪問: <a href=":url">:url</a>'
+    ignore: 如果您沒有請求重置密碼，請忽略這封郵件。
+reset:
+  title: 重設密碼
+  button: 重設
+  invalid: 無效的鏈接。
+  expired: 此連結已過期。
+  message: ':username，請在此處重置密碼。'
+  success: 密碼已成功重置。
+bind:
+  title: 綁定電郵地址
+  button: 綁定
+  message: 您需要提供您的電子郵件地址以繼續.
+  introduction: 我們不會向您發送任何垃圾郵件.
+  registered: 電郵地址已被使用。
+verify:
+  title: 電子信箱驗證
+  invalid: 無效的鏈接。
+  not-matched: 電子郵件地址不匹配。
+validation:
+  user: 沒有這個用戶。
+  password: 錯誤的密碼。
+logout:
+  success: 您現在已登出
+oauth:
+  authorization:
+    title: 身份認証
+    introduction: 第三方軟體 :name 正在向你請求獲取權限。
+    button: 認證
+    permissions: 權限
+  scope:
+    user:
+      read: 登錄並讀取您的個人資料
+    notification:
+      read: 允許應用讀取您的通知
+      readwrite: 允許應用發送通知
+    player:
+      read: 允許應用讀取您的角色
+      readwrite: 允許應用創建、讀取、修改、刪除您的角色
+    closet:
+      read: 允許應用讀取您的衣櫃物品
+      readwrite: 允許應用創建、讀取、修改、刪除您的衣櫃物品
+    users-management:
+      read: 允許應用讀取網站上的使用者
+      readwrite: 允許應用創建、讀取、修改、刪除您網站上的使用者
+    players-management:
+      read: 允許應用讀取網站上的角色
+      readwrite: 允許應用創建、讀取、修改、刪除您網站上的角色
+    closet-management:
+      read: 允許應用讀取使用者的衣櫃物品
+      readwrite: 允許應用創建、讀取、修改、刪除使用者的衣櫃物品
+    reports-management:
+      read: 允許應用讀取用戶的舉報
+      readwrite: 允許應用讀取並處理用戶的舉報
+email: 電子郵件
+register-link: 註冊新帳戶

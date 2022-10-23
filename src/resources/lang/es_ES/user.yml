@@ -1,0 +1,101 @@
+---
+sign-success: Firmado con éxito. Obtuviste :score puntuaciones.
+announcement: Anuncio
+no-unread: No hay notificaciones nuevas.
+verification:
+  disabled: La verificación del correo electrónico no está disponible.
+  frequent-mail: Haces clic en el botón de enviar demasiado rápido. Espera 60 segundos, tío.
+  verified: Tu cuenta ya está verificada.
+  success: El enlace de verificación fue enviado, por favor comprueba tu bandeja de entrada.
+  failed: No hemos podido enviarte el enlace de verificación. Mensaje detallado :msg
+  mail:
+    title: Verifique su cuenta en :sitename
+    message: Está recibiendo este correo electrónico porque alguien registró una cuenta con esta dirección en :sitename.
+    reset: 'Haga clic aquí para verificar su cuenta: <a href=":url">:url</a>'
+    ignore: Si no registraste una cuenta, no se requiere ninguna acción adicional.
+score-intro:
+  title: '¿Qué es la puntuación?'
+  introduction: |
+    Utilizamos el sistema de puntuación para prevenir comportamientos como la subida de gran cantidades de texturas y el registro de jugadores casualmente.
+    Agregando jugadores, subiendo texturas o añadiendo un elemento skinlib a tu armario consumirá puntuaciones.
+    :return-score
+
+    Nuevos usuarios obtendrán :initial_score inicialmente, y puedes adquirir puntajes :score-from ~ :score-to iniciando su sesión diariamente.
+  will-return-score: La puntuación se devolverá si eliminas jugadores, texturas subidas o elementos de armario.
+  no-return-score: La puntuación NO se devolverá si eliminas jugadores, texturas subidas o elementos de armario.
+  rates:
+    storage: ':score puntajes = 1 KB de almacenamiento'
+    player: ':score puntajes = 1 jugador'
+    closet: ':score puntajes = 1 elemento de armario'
+closet:
+  add:
+    success: Añadido :name al armario con éxito.
+    repeated: Ya has añadido esta textura.
+    not-found: No podemos encontrar esta textura.
+    lack-score: No tienes suficiente puntuación para añadirlo al armario.
+  rename:
+    success: El elemento se renombró correctamente a :name
+  remove:
+    success: La textura se ha retirado del armario con éxito.
+    non-existent: La textura no existe en su armario.
+player:
+  login-notice: Ahora puede iniciar su sesión con los nombres de jugadores que posees en el lugar de una dirección de correo electrónico.
+  player-name-rule:
+    official: El nombre del jugador sólo puede contener letras, números y guiones bajos.
+    cjk: El nombre del jugador puede contener letras, números, guiones bajos e ideógrafos unificados de CJK.
+    utf8: Player name must be a UTF-8 string.
+    custom: Las reglas de nombre del jugador personalizadas se aplican en este sitio Por favor, contacte a los administradores para obtener más información.
+  player-name-length: El nombre del jugador debe tener al menos :min caracteres y no más de :max caracteres.
+  add:
+    repeated: El nombre del jugador ya está registrado.
+    lack-score: No tienes suficiente puntuación para añadir un jugador.
+    success: Jugador :name se agregó exitosamente.
+  delete:
+    success: Jugador :name fue eliminado exitosamente.
+  rename:
+    repeated: Este nombre de jugador está ocupado. Por favor, elija otro.
+    success: Jugador :old fue renombrado a :new
+  set:
+    success: La textura se aplicó al jugador :name con éxito.
+  clear:
+    success: Las texturas del jugador :name se restablecieron con éxito.
+profile:
+  avatar:
+    title: '¿Cambiar avatar?'
+    notice: Haz clic en el icono del engranaje "<i class="fa fa-cog"></i>" de cualquier aspecto de tu armario, luego haz clic en "Establecer como avatar". Cortaremos el segmento de cabeza de ese skin para ti. Si no hay ningún icono como este, por favor intenta desabilitando su bloqueador de anuncios.
+    wrong-type: No puedes establecer una capa como avatar.
+    success: Nuevo avatar se ha establecido correctamente.
+    reset: Restablecer avatar
+  password:
+    title: Cambiar contraseña
+    old: Contraseña antigua
+    new: Contraseña nueva
+    confirm: Repetir contraseña
+    button: Cambiar contraseña
+    wrong-password: Contraseña original incorrecta.
+    success: Contraseña actualizada con éxito, por favor inicie sesión de nuevo.
+  nickname:
+    title: Cambiar apodo
+    empty: No se hay apodo asignado ahora.
+    success: Apodo actualizado correctamente a :nickname
+  email:
+    title: Cambiar email
+    new: Nuevo email
+    password: Contraseña actual
+    button: Cambiar email
+    wrong-password: Contraseña incorrecta.
+    existed: Esta dirección de correo electrónico está ocupada.
+    success: Dirección de correo electrónico actualizada con éxito, por favor inicie sesión de nuevo.
+  delete:
+    title: Eliminar cuenta
+    notice: '¿Seguro que quieres eliminar su cuenta en :site?'
+    admin: La cuenta de administrador no puede ser eliminada.
+    button: Borrar mi cuenta
+    modal-title: Necesita introducir su contraseña para continuar
+    modal-notice: |
+      Está a punto de eliminar su cuenta.
+      ¡Esto es permanente! Sin copias de seguridad, sin restauraciones, sin botón mágico.
+      Le advertimos, ¿bien?
+    password: Contraseña actual
+    wrong-password: Contraseña incorrecta.
+    success: Su cuenta se ha eliminado con éxito.

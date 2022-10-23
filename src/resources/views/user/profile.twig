@@ -1,0 +1,36 @@
+{% extends 'user.base' %}
+
+{% block title %}{{ trans('general.profile') }}{% endblock %}
+
+{% block content %}
+  {{ include('shared.grid') }}
+
+  <form id="modal-delete-account" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content bg-danger">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            {{ trans('user.profile.delete.modal-title') }}
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>{{ trans('user.profile.delete.modal-notice')|nl2br|raw }}</div>
+          <br>
+          <input type="password" class="form-control" required name="password"
+            placeholder="{{ trans('user.profile.delete.password') }}" autocomplete="current-password">
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-light" data-dismiss="modal">
+            {{ trans('general.close') }}
+          </button>
+          <button type="submit" class="btn btn-outline-light">
+            {{ trans('general.submit') }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+{% endblock %}

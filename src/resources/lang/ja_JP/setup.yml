@@ -1,0 +1,44 @@
+---
+database:
+  connection-error: "ターゲット :type データベースに接続できません。設定を確認してください。サーバーが以下の返信を受けました: :msg"
+locked:
+  title: すでにインストールされています
+  text: Blessing Skin Serverがインストールされているようです。再インストールするには、"storage"ディレクトリの下にある"install.lock"ファイルを削除してください。
+  button: ホームページに戻る
+updates:
+  success:
+    title: 更新完了
+wizard:
+  master:
+    title: インストールウィザード - Blessing Skin Server
+  welcome:
+    title: ようこそ
+    button: 次へ
+    text: Blessing Skin Server v:version へようこそ!
+  database:
+    title: データベース
+    text: Blessing Skinのデータを格納するためのデータベースです。
+    type: データベース種別
+    host: データベースホスト
+    port: データベースポート
+    username: データベース名
+    password: データベースパスワード
+    db: データベース名
+    db-notice: SQLiteファイルのパスを指定し、SQLiteを使用する場合はその他の空白を埋める必要はありません。
+    prefix: データベーステーブルのプレフィックス(オプション)
+    prefix-notice: 複数のBlessing Skin Serverを1つのデータベースにインストールする場合を除き、このオプションを使用する必要はありません。
+  info:
+    title: 必要な情報
+    button: インストールを実行
+    text: インストールを続行するには、このフォームに初期管理者アカウントの詳細を記入してください。 心配しないで、これらの設定は後でいつでも変更できます。
+    admin-email: 管理者メールアドレス
+    admin-notice: このアカウントは、他のユーザーの管理者権限を与えたり、取り消したりすることができる、ユニークなスーパー管理者アカウントです。
+    nickname: ニックネーム
+    password: パスワード
+    pwd-notice: '注意: ログインするにはパスワードが必要です。安全な場所に保管してください。'
+    confirm-pwd: パスワードの確認
+    site-name: サイト名
+    site-name-notice: これはすべてのページに表示されます。
+  finish:
+    title: インストール完了
+    text: Blessing Skin Serverがインストールされました。ありがとうございました。

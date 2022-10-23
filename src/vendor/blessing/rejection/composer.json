@@ -1,0 +1,32 @@
+{
+    "name": "blessing/rejection",
+    "description": "Rejection is an object that indicates you are rejecting.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pig Fang",
+            "email": "g-plane@hotmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "illuminate/support": "^6 || ^7 || ^8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blessing\\": "src/Blessing"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

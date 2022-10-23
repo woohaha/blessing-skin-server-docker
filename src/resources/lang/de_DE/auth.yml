@@ -1,0 +1,85 @@
+---
+login:
+  title: Anmeldung
+  message: Melden Sie sich an, um Ihren Skin & Ihre Spieler zu verwalten
+  success: Erfolgreich angemeldet.
+check:
+  anonymous: Ungültiger Zugriff. Bitte melden Sie sich zuerst an.
+  verified: Um auf diese Seite zuzugreifen, bitte zuerst E-Mail-Adresse bestätigen.
+  admin: Nur Administratoren dürfen auf diese Seite zugreifen.
+  banned: Du bist auf dieser Seite gebannt. Bitte kontaktiere den Administrator.
+register:
+  title: Konto erstellen
+  message: Willkommen bei :sitename!
+  success: Konto wurde registriert. Weiterleitung...
+  max: Sie können nicht mehr als :regs Konten registrieren.
+forgot:
+  title: Passwort vergessen
+  message: Wir senden Ihnen eine E-Mail zur Überprüfung.
+  disabled: Zurücksetzen des Passworts ist nicht verfügbar.
+  frequent-mail: Du klickst zu schnell auf den Senden-Button. Warte einige Minuten.
+  unregistered: Diese E-Mail-Adresse ist nicht registriert.
+  success: E-Mail gesendet, bitte überprüfen Sie Ihren Posteingang. Der Link wird in 1 Stunde abgelaufen.
+  failed: Verifizierungs-E-Mail konnte nicht versendet werden
+  ignore: Wenn Sie sich nicht auf unserer Seite angemeldet haben, ignorieren Sie bitte diese E-Mail. Es ist kein Abmelden erforderlich.
+  reset: Passwort zurücksetzen
+  notice: Diese E-Mail wurde automatisch gesendet. Bitte nicht antworten!
+  mail:
+    title: Passworts zurücksetzen auf :sitename
+    message: Sie erhalten diese E-Mail, weil jemand versucht hat, Ihr Passwort zurückzusetzen.
+    reset: 'Um Ihr Passwort zurückzusetzen, besuchen Sie bitte: <a href=":url">:url</a>'
+    ignore: Wenn Sie keine Passwortzurücksetzung angefordert haben, ist keine weitere Aktion erforderlich.
+reset:
+  title: Passwort zurücksetzen
+  button: Zurücksetzen
+  invalid: Ungültiger Link.
+  expired: Dieser Link ist abgelaufen.
+  message: ':username, reset your password here.'
+  success: Passwort erfolgreich zurückgesetzt.
+bind:
+  title: E-Mail verbinden
+  button: verbinden
+  message: Du musst deinen E-Mail-Addersse angeben, um fortfahren zu können.
+  introduction: Wir werden dir keinen Spam senden.
+  registered: Diese E-Mail-Adresse ist bereits vergeben.
+verify:
+  title: E-Mail-Adresse bestätigen
+  invalid: Ungültiger Link.
+  not-matched: Die Email-Adresse stimmt nicht überein.
+validation:
+  user: Benutzer nicht gefunden.
+  password: Falsches Passwort.
+logout:
+  success: Du hast dich erfolgreich abgemeldet.
+oauth:
+  authorization:
+    title: Autorisierung
+    introduction: Eine Drittanbieter-Anwendung ":name" bittet um Erlaubnis, auf Ihr Konto zuzugreifen.
+    button: Autorisieren
+    permissions: Berechtigungen
+  scope:
+    user:
+      read: Anmelden und Profil einstellen
+    notification:
+      read: Ermöglicht der App, Ihre Benachrichtigungen zu lesen.
+      readwrite: Ermöglicht der App, Benachrichtigungen zu senden.
+    player:
+      read: Ermöglicht der App, Benachrichtigungen zu lesen.
+      readwrite: Ermöglicht der App, Ihre Spieler zu erstellen, zu lesen, zu aktualisieren und zu löschen.
+    closet:
+      read: Ermöglicht der App, den Kleiderschrank zu sehen.
+      readwrite: Ermöglicht der App, den Kleiderschrank zu ändern.
+    users-management:
+      read: Ermöglicht der App, das Benutzerprofil zu lesen.
+      readwrite: Ermöglicht der App, das Benutzerprofil zu erstellen, zu lesen, zu aktualisieren und zu löschen.
+    players-management:
+      read: Ermöglicht der App, die hinzugefügten Spielerdaten zu lesen.
+      readwrite: Ermöglicht der App, Spielerdaten zu erstellen, zu lesen, zu aktualisieren und zu löschen.
+    closet-management:
+      read: Ermöglicht der App, den Kleiderschrank zu sehen.
+      readwrite: Ermöglicht der App, Skins hinzuzufügen, zu ändern, und zu löschen.
+    reports-management:
+      read: Ermöglicht der App, Meldungen zu lesen.
+      readwrite: Ermöglicht der App, Meldungen des Benutzers zu lesen und zu überprüfen.
+email: E-Mail-Adresse
+register-link: Registrieren
